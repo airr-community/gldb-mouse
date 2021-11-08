@@ -14,7 +14,8 @@ with open(imcb_file, 'r') as fi:
     reader = csv.DictReader(fi)
     for row in reader:
         strain, lab = row['Strain_ID'].split('/')
-        name = '%s_%s_%s' % (strain, lab, row['Sequence_ID'].split('_')[1])
+        strain = '%s_%s' % (strain, lab)
+        name = '%s_%s' % (strain, row['Sequence_ID'].split('_')[1])
         if strain not in strain_seqs:
             strain_seqs[strain] = {}
         strain_seqs[strain][name] = row['Sequence']
