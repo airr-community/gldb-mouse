@@ -13,14 +13,6 @@ args = parser.parse_args()
 
 sources = {}
 
-def add_name_and_type(rec, label, type):
-    if rec['type'] is None:
-        rec['type'] = type
-        rec['gene_label'] = 'IGH' + type[0] + '-' + label
-
-    return
-
-
 for source in args.source:
     genes = simple.read_fasta(source)
     source_name = source.split('/')[0]
@@ -58,8 +50,10 @@ with open(args.database, 'r') as fi, open(args.output_file, 'w', newline='') as 
                         if seq in imgt_seq:
                             rec[source] = ','.join([rec['gene_name'] for rec in sources[source][imgt_seq]])
                             rec['type'] = sources[source][imgt_seq][0]['type']
+                            rec['gene_label'] = rec['type'] + '-' + row['label']
                 else:
                     if seq in sources[source]:
                         rec[source] = ','.join([rec['gene_name'] for rec in sources[source][seq]])
                         rec['type'] = sources[source][seq][0]['type']
+                        rec['gene_label'] = rec['type'] + '-' + row['label']
             writer.writerow(rec)
