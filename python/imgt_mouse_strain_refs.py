@@ -7,7 +7,7 @@ import argparse
 from Bio import SeqIO
 import simple_bio_seq as simple
 
-imgt_file = 'imgt/IMGTGENEDB-ReferenceSequences.fasta-nt-WithoutGaps-F+ORF+inframeP'
+imgt_file = 'imgt/IMGTGENEDB-ReferenceSequences.fasta-nt-WithGaps-F+ORF+inframeP'
 strains = ['musculus']
 gene_types = ['IGHV', 'IGHD', 'IGHJ']
 
@@ -16,6 +16,8 @@ strain_seqs = {}
 
 for strain in strains:
     strain_seqs[strain] = {}
+    strain_seqs[strain]['gapped'] = {}
+    strain_seqs[strain]['ungapped'] = {}
 
 recs = SeqIO.parse(imgt_file, 'fasta')
 
@@ -26,12 +28,19 @@ for rec in recs:
             name = rec.description.split('|')[1]
             if 'Mus musculus' in imgt_species:
                 if 'musculus' in strains:
-                    strain_seqs['musculus'][name + '|' + imgt_species.replace(' ', '_')] = str(rec.seq).upper()
+                    if 'V' in gene_type:
+                        strain_seqs['musculus']['gapped'][name + '|' + imgt_species.replace(' ', '_')] = str(rec.seq).upper()
+
+                    strain_seqs['musculus']['ungapped'][name + '|' + imgt_species.replace(' ', '_')] = str(rec.seq).upper().replace('.', '')
 
                 for strain in strains:
                     if strain != 'musculus' and strain in imgt_species:
-                        strain_seqs[strain][name + '|' + imgt_species] = str(rec.seq).upper()
+                        if 'V' in gene_type:
+                            strain_seqs[strain]['gapped'][name + '|' + imgt_species] = str(rec.seq).upper()
+
+                        strain_seqs[strain]['ungapped'][name + '|' + imgt_species] = str(rec.seq).upper().replace('.', '')
             
 for strain in strains:
-    simple.write_fasta(strain_seqs[strain], 'imgt/%s_imgt_ungapped.fasta' % strain)
+    simple.write_fasta(strain_seqs[strain]['gapped'], 'imgt/%s_imgt_V_gapped.fasta' % strain)
+    simple.write_fasta(strain_seqs[strain]['ungapped'], 'imgt/%s_imgt_ungapped.fasta' % strain)
 
