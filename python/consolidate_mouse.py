@@ -38,16 +38,16 @@ for name, seq in imgt_ref.items():
 
 with open(args.database, 'r') as fi, open(args.output_file, 'w', newline='') as fo:
     reader = csv.DictReader(fi)
-    headers = ['gene_label', 'type', 'functional', 'inference_type', 'species_subgroup']
+    headers = ['gene_label', 'type', 'functional', 'inference_type', 'species_subgroup', 'subgroup_type']
     headers.extend(sources.keys())
-    headers.extend(['alt_names', 'notes', 'sequence', 'sequence_gapped'])
+    headers.extend(['alt_names', 'notes', 'affirmation', 'sequence', 'sequence_gapped'])
     writer = csv.DictWriter(fo, fieldnames=headers)
     writer.writeheader()
 
     for row in reader:
         for seq in row['sequences'].split(','):
             rec = {'gene_label': row['label'], 'type': None, 'functional': 'Y', 'inference_type': 'Rearranged', 
-                    'species_subgroup': args.subgroup, 'alt_names': '', 'notes': '', 'sequence': seq, 'sequence_gapped': ''}
+                    'species_subgroup': args.subgroup, 'subgroup_type': 'strain', 'alt_names': '', 'notes': '', 'affirmation': '1', 'sequence': seq, 'sequence_gapped': ''}
             alt_names = []
             for source in sources.keys():
                 rec[source] = ''
