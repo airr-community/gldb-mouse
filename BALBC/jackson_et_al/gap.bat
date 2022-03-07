@@ -1,0 +1,1 @@
+gap_inferred balbc_ighv_ungapped.fasta ../imgt/musculus_imgt_V_gapped.fasta balbc_ighv_gapped.fasta
