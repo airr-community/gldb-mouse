@@ -1,0 +1,1312 @@
+
+(digby39) d:\Research\gldb-mouse>cd C3H_HeJ 
+
+(digby39) d:\Research\gldb-mouse\C3H_HeJ>rm db/mouse_C3H_HeJ_IGK.csv 
+
+(digby39) d:\Research\gldb-mouse\C3H_HeJ>python ../../iglabel/iglabel.py create db/mouse_C3H_HeJ_IGK.csv 
+Creating database "db/mouse_C3H_HeJ_IGK.csv"
+Database created.
+
+(digby39) d:\Research\gldb-mouse\C3H_HeJ>python ../../iglabel/iglabel.py query db/mouse_C3H_HeJ_IGK.csv kos_et_al_2022_light_chain/IGK_V.fasta results.csv actions.csv 
+Querying database "db/mouse_C3H_HeJ_IGK.csv" for sequences in "kos_et_al_2022_light_chain/IGK_V.fasta"
+
+(digby39) d:\Research\gldb-mouse\C3H_HeJ>python ../../iglabel/iglabel.py add db/mouse_C3H_HeJ_IGK.csv actions.csv "Kos et al., 2022" 
+Database written to db/mouse_C3H_HeJ_IGK.csv. Previous version saved as db/mouse_C3H_HeJ_IGK_old.csv
+
+(digby39) d:\Research\gldb-mouse\C3H_HeJ>gap_inferred kos_et_al_2022_light_chain/IGK_V.fasta ../imgt/Mus_musculus_IGKV_gapped.fasta kos_et_al_2022_light_chain/IGK_V_gapped.fasta 
+Removing IGKV1-108*02 from reference: First cysteine not found
+Removing IGKV10-96*05 from reference: Stop codon in V-REGION
+Removing IGKV10-96*06 from reference: Conserved Trp not found
+Removing IGKV12-40*01 from reference: Stop codon in V-REGION
+Removing IGKV13-50-1*01 from reference: Stop codon in V-REGION
+Removing IGKV13-57-2*01 from reference: Stop codon in V-REGION
+Removing IGKV13-76*01 from reference: Stop codon in V-REGION
+Removing IGKV13-77-1*01 from reference: Stop codon in V-REGION
+Removing IGKV13-82*01 from reference: Stop codon in V-REGION
+Warning: reference sequence IGKV13-85*02: Sequence truncated before second cysteine (if you don't want to use this as a reference sequence, please remove it from the file)
+Warning: reference sequence IGKV13-85*03: Sequence truncated before second cysteine (if you don't want to use this as a reference sequence, please remove it from the file)
+Removing IGKV15-101*01 from reference: Stop codon in V-REGION
+Removing IGKV15-102*01 from reference: Stop codon in V-REGION
+Removing IGKV15-97*02 from reference: Stop codon in V-REGION
+Removing IGKV17/OR16-3*01 from reference: Second cysteine not found
+Removing IGKV17/OR19-2*01 from reference: Conserved Trp not found
+Removing IGKV3-8*01 from reference: Stop codon in V-REGION
+Removing IGKV4-52*01 from reference: Conserved Trp not found
+Removing IGKV4-54*01 from reference: Conserved Trp not found
+Removing IGKV4-65*02 from reference: Stop codon in V-REGION
+Removing IGKV4-75*01 from reference: Stop codon in V-REGION
+Removing IGKV4-77*01 from reference: Stop codon in V-REGION
+Removing IGKV4-83*01 from reference: Stop codon in V-REGION
+Removing IGKV9-119*01 from reference: Stop codon in V-REGION
+Removing IGKV9-128*01 from reference: Stop codon in V-REGION
+Removing IGKV9-129*01 from reference: Conserved Trp not found
+IGKV4-52*01_S5019_C3H: Conserved Trp not found
+IGKV9-129*01_C3H: Conserved Trp not found
+
+(digby39) d:\Research\gldb-mouse\C3H_HeJ>cd .. 
+
+(digby39) d:\Research\gldb-mouse>cd PWD_PhJ 
+
+(digby39) d:\Research\gldb-mouse\PWD_PhJ>rm db/mouse_PWD_PhJ_IGK.csv 
+
+(digby39) d:\Research\gldb-mouse\PWD_PhJ>python ../../iglabel/iglabel.py create db/mouse_PWD_PhJ_IGK.csv 
+Creating database "db/mouse_PWD_PhJ_IGK.csv"
+Database created.
+
+(digby39) d:\Research\gldb-mouse\PWD_PhJ>python ../../iglabel/iglabel.py query db/mouse_PWD_PhJ_IGK.csv kos_et_al_2022_light_chain/IGK_V.fasta results.csv actions.csv 
+Querying database "db/mouse_PWD_PhJ_IGK.csv" for sequences in "kos_et_al_2022_light_chain/IGK_V.fasta"
+
+(digby39) d:\Research\gldb-mouse\PWD_PhJ>python ../../iglabel/iglabel.py add db/mouse_PWD_PhJ_IGK.csv actions.csv "Kos et al., 2022" 
+Database written to db/mouse_PWD_PhJ_IGK.csv. Previous version saved as db/mouse_PWD_PhJ_IGK_old.csv
+
+(digby39) d:\Research\gldb-mouse\PWD_PhJ>gap_inferred kos_et_al_2022_light_chain/IGK_V.fasta ../imgt/Mus_musculus_IGKV_gapped.fasta kos_et_al_2022_light_chain/IGK_V_gapped.fasta 
+Removing IGKV1-108*02 from reference: First cysteine not found
+Removing IGKV10-96*05 from reference: Stop codon in V-REGION
+Removing IGKV10-96*06 from reference: Conserved Trp not found
+Removing IGKV12-40*01 from reference: Stop codon in V-REGION
+Removing IGKV13-50-1*01 from reference: Stop codon in V-REGION
+Removing IGKV13-57-2*01 from reference: Stop codon in V-REGION
+Removing IGKV13-76*01 from reference: Stop codon in V-REGION
+Removing IGKV13-77-1*01 from reference: Stop codon in V-REGION
+Removing IGKV13-82*01 from reference: Stop codon in V-REGION
+Warning: reference sequence IGKV13-85*02: Sequence truncated before second cysteine (if you don't want to use this as a reference sequence, please remove it from the file)
+Warning: reference sequence IGKV13-85*03: Sequence truncated before second cysteine (if you don't want to use this as a reference sequence, please remove it from the file)
+Removing IGKV15-101*01 from reference: Stop codon in V-REGION
+Removing IGKV15-102*01 from reference: Stop codon in V-REGION
+Removing IGKV15-97*02 from reference: Stop codon in V-REGION
+Removing IGKV17/OR16-3*01 from reference: Second cysteine not found
+Removing IGKV17/OR19-2*01 from reference: Conserved Trp not found
+Removing IGKV3-8*01 from reference: Stop codon in V-REGION
+Removing IGKV4-52*01 from reference: Conserved Trp not found
+Removing IGKV4-54*01 from reference: Conserved Trp not found
+Removing IGKV4-65*02 from reference: Stop codon in V-REGION
+Removing IGKV4-75*01 from reference: Stop codon in V-REGION
+Removing IGKV4-77*01 from reference: Stop codon in V-REGION
+Removing IGKV4-83*01 from reference: Stop codon in V-REGION
+Removing IGKV9-119*01 from reference: Stop codon in V-REGION
+Removing IGKV9-128*01 from reference: Stop codon in V-REGION
+Removing IGKV9-129*01 from reference: Conserved Trp not found
+IGKV13-84*01_S4500_PWD: Conserved Trp not found
+IGKV4-92*01_S5510_PWD: Second cysteine not found
+
+(digby39) d:\Research\gldb-mouse\PWD_PhJ>cd .. 
+
+(digby39) d:\Research\gldb-mouse>cd SJL_J 
+
+(digby39) d:\Research\gldb-mouse\SJL_J>rm db/mouse_SJL_J_IGK.csv 
+
+(digby39) d:\Research\gldb-mouse\SJL_J>python ../../iglabel/iglabel.py create db/mouse_SJL_J_IGK.csv 
+Creating database "db/mouse_SJL_J_IGK.csv"
+Database created.
+
+(digby39) d:\Research\gldb-mouse\SJL_J>python ../../iglabel/iglabel.py query db/mouse_SJL_J_IGK.csv kos_et_al_2022_light_chain/IGK_V.fasta results.csv actions.csv 
+Querying database "db/mouse_SJL_J_IGK.csv" for sequences in "kos_et_al_2022_light_chain/IGK_V.fasta"
+
+(digby39) d:\Research\gldb-mouse\SJL_J>python ../../iglabel/iglabel.py add db/mouse_SJL_J_IGK.csv actions.csv "Kos et al., 2022" 
+Database written to db/mouse_SJL_J_IGK.csv. Previous version saved as db/mouse_SJL_J_IGK_old.csv
+
+(digby39) d:\Research\gldb-mouse\SJL_J>gap_inferred kos_et_al_2022_light_chain/IGK_V.fasta ../imgt/Mus_musculus_IGKV_gapped.fasta kos_et_al_2022_light_chain/IGK_V_gapped.fasta 
+Removing IGKV1-108*02 from reference: First cysteine not found
+Removing IGKV10-96*05 from reference: Stop codon in V-REGION
+Removing IGKV10-96*06 from reference: Conserved Trp not found
+Removing IGKV12-40*01 from reference: Stop codon in V-REGION
+Removing IGKV13-50-1*01 from reference: Stop codon in V-REGION
+Removing IGKV13-57-2*01 from reference: Stop codon in V-REGION
+Removing IGKV13-76*01 from reference: Stop codon in V-REGION
+Removing IGKV13-77-1*01 from reference: Stop codon in V-REGION
+Removing IGKV13-82*01 from reference: Stop codon in V-REGION
+Warning: reference sequence IGKV13-85*02: Sequence truncated before second cysteine (if you don't want to use this as a reference sequence, please remove it from the file)
+Warning: reference sequence IGKV13-85*03: Sequence truncated before second cysteine (if you don't want to use this as a reference sequence, please remove it from the file)
+Removing IGKV15-101*01 from reference: Stop codon in V-REGION
+Removing IGKV15-102*01 from reference: Stop codon in V-REGION
+Removing IGKV15-97*02 from reference: Stop codon in V-REGION
+Removing IGKV17/OR16-3*01 from reference: Second cysteine not found
+Removing IGKV17/OR19-2*01 from reference: Conserved Trp not found
+Removing IGKV3-8*01 from reference: Stop codon in V-REGION
+Removing IGKV4-52*01 from reference: Conserved Trp not found
+Removing IGKV4-54*01 from reference: Conserved Trp not found
+Removing IGKV4-65*02 from reference: Stop codon in V-REGION
+Removing IGKV4-75*01 from reference: Stop codon in V-REGION
+Removing IGKV4-77*01 from reference: Stop codon in V-REGION
+Removing IGKV4-83*01 from reference: Stop codon in V-REGION
+Removing IGKV9-119*01 from reference: Stop codon in V-REGION
+Removing IGKV9-128*01 from reference: Stop codon in V-REGION
+Removing IGKV9-129*01 from reference: Conserved Trp not found
+IGKV4-52*01_S5019_SJL: Conserved Trp not found
+IGKV4-52*01_SJL: Conserved Trp not found
+
+(digby39) d:\Research\gldb-mouse\SJL_J>cd .. 
+
+(digby39) d:\Research\gldb-mouse>cd NZB_BlNJ 
+
+(digby39) d:\Research\gldb-mouse\NZB_BlNJ>rm db/mouse_NZB_BlNJ_IGK.csv 
+
+(digby39) d:\Research\gldb-mouse\NZB_BlNJ>python ../../iglabel/iglabel.py create db/mouse_NZB_BlNJ_IGK.csv 
+Creating database "db/mouse_NZB_BlNJ_IGK.csv"
+Database created.
+
+(digby39) d:\Research\gldb-mouse\NZB_BlNJ>python ../../iglabel/iglabel.py query db/mouse_NZB_BlNJ_IGK.csv kos_et_al_2022_light_chain/IGK_V.fasta results.csv actions.csv 
+Querying database "db/mouse_NZB_BlNJ_IGK.csv" for sequences in "kos_et_al_2022_light_chain/IGK_V.fasta"
+
+(digby39) d:\Research\gldb-mouse\NZB_BlNJ>python ../../iglabel/iglabel.py add db/mouse_NZB_BlNJ_IGK.csv actions.csv "Kos et al., 2022" 
+Database written to db/mouse_NZB_BlNJ_IGK.csv. Previous version saved as db/mouse_NZB_BlNJ_IGK_old.csv
+
+(digby39) d:\Research\gldb-mouse\NZB_BlNJ>gap_inferred kos_et_al_2022_light_chain/IGK_V.fasta ../imgt/Mus_musculus_IGKV_gapped.fasta kos_et_al_2022_light_chain/IGK_V_gapped.fasta 
+Removing IGKV1-108*02 from reference: First cysteine not found
+Removing IGKV10-96*05 from reference: Stop codon in V-REGION
+Removing IGKV10-96*06 from reference: Conserved Trp not found
+Removing IGKV12-40*01 from reference: Stop codon in V-REGION
+Removing IGKV13-50-1*01 from reference: Stop codon in V-REGION
+Removing IGKV13-57-2*01 from reference: Stop codon in V-REGION
+Removing IGKV13-76*01 from reference: Stop codon in V-REGION
+Removing IGKV13-77-1*01 from reference: Stop codon in V-REGION
+Removing IGKV13-82*01 from reference: Stop codon in V-REGION
+Warning: reference sequence IGKV13-85*02: Sequence truncated before second cysteine (if you don't want to use this as a reference sequence, please remove it from the file)
+Warning: reference sequence IGKV13-85*03: Sequence truncated before second cysteine (if you don't want to use this as a reference sequence, please remove it from the file)
+Removing IGKV15-101*01 from reference: Stop codon in V-REGION
+Removing IGKV15-102*01 from reference: Stop codon in V-REGION
+Removing IGKV15-97*02 from reference: Stop codon in V-REGION
+Removing IGKV17/OR16-3*01 from reference: Second cysteine not found
+Removing IGKV17/OR19-2*01 from reference: Conserved Trp not found
+Removing IGKV3-8*01 from reference: Stop codon in V-REGION
+Removing IGKV4-52*01 from reference: Conserved Trp not found
+Removing IGKV4-54*01 from reference: Conserved Trp not found
+Removing IGKV4-65*02 from reference: Stop codon in V-REGION
+Removing IGKV4-75*01 from reference: Stop codon in V-REGION
+Removing IGKV4-77*01 from reference: Stop codon in V-REGION
+Removing IGKV4-83*01 from reference: Stop codon in V-REGION
+Removing IGKV9-119*01 from reference: Stop codon in V-REGION
+Removing IGKV9-128*01 from reference: Stop codon in V-REGION
+Removing IGKV9-129*01 from reference: Conserved Trp not found
+IGKV4-52*01_NZB: Conserved Trp not found
+IGKV4-52*01_S5019_NZB: Conserved Trp not found
+IGKV9-123*01_S4862_NZB: Second cysteine not found
+
+(digby39) d:\Research\gldb-mouse\NZB_BlNJ>cd .. 
+
+(digby39) d:\Research\gldb-mouse>cd CBA_J 
+
+(digby39) d:\Research\gldb-mouse\CBA_J>rm db/mouse_CBA_J_IGK.csv 
+
+(digby39) d:\Research\gldb-mouse\CBA_J>python ../../iglabel/iglabel.py create db/mouse_CBA_J_IGK.csv 
+Creating database "db/mouse_CBA_J_IGK.csv"
+Database created.
+
+(digby39) d:\Research\gldb-mouse\CBA_J>python ../../iglabel/iglabel.py query db/mouse_CBA_J_IGK.csv kos_et_al_2022_light_chain/IGK_V.fasta results.csv actions.csv 
+Querying database "db/mouse_CBA_J_IGK.csv" for sequences in "kos_et_al_2022_light_chain/IGK_V.fasta"
+
+(digby39) d:\Research\gldb-mouse\CBA_J>python ../../iglabel/iglabel.py add db/mouse_CBA_J_IGK.csv actions.csv "Kos et al., 2022" 
+Database written to db/mouse_CBA_J_IGK.csv. Previous version saved as db/mouse_CBA_J_IGK_old.csv
+
+(digby39) d:\Research\gldb-mouse\CBA_J>gap_inferred kos_et_al_2022_light_chain/IGK_V.fasta ../imgt/Mus_musculus_IGKV_gapped.fasta kos_et_al_2022_light_chain/IGK_V_gapped.fasta 
+Removing IGKV1-108*02 from reference: First cysteine not found
+Removing IGKV10-96*05 from reference: Stop codon in V-REGION
+Removing IGKV10-96*06 from reference: Conserved Trp not found
+Removing IGKV12-40*01 from reference: Stop codon in V-REGION
+Removing IGKV13-50-1*01 from reference: Stop codon in V-REGION
+Removing IGKV13-57-2*01 from reference: Stop codon in V-REGION
+Removing IGKV13-76*01 from reference: Stop codon in V-REGION
+Removing IGKV13-77-1*01 from reference: Stop codon in V-REGION
+Removing IGKV13-82*01 from reference: Stop codon in V-REGION
+Warning: reference sequence IGKV13-85*02: Sequence truncated before second cysteine (if you don't want to use this as a reference sequence, please remove it from the file)
+Warning: reference sequence IGKV13-85*03: Sequence truncated before second cysteine (if you don't want to use this as a reference sequence, please remove it from the file)
+Removing IGKV15-101*01 from reference: Stop codon in V-REGION
+Removing IGKV15-102*01 from reference: Stop codon in V-REGION
+Removing IGKV15-97*02 from reference: Stop codon in V-REGION
+Removing IGKV17/OR16-3*01 from reference: Second cysteine not found
+Removing IGKV17/OR19-2*01 from reference: Conserved Trp not found
+Removing IGKV3-8*01 from reference: Stop codon in V-REGION
+Removing IGKV4-52*01 from reference: Conserved Trp not found
+Removing IGKV4-54*01 from reference: Conserved Trp not found
+Removing IGKV4-65*02 from reference: Stop codon in V-REGION
+Removing IGKV4-75*01 from reference: Stop codon in V-REGION
+Removing IGKV4-77*01 from reference: Stop codon in V-REGION
+Removing IGKV4-83*01 from reference: Stop codon in V-REGION
+Removing IGKV9-119*01 from reference: Stop codon in V-REGION
+Removing IGKV9-128*01 from reference: Stop codon in V-REGION
+Removing IGKV9-129*01 from reference: Conserved Trp not found
+
+(digby39) d:\Research\gldb-mouse\CBA_J>cd .. 
+
+(digby39) d:\Research\gldb-mouse>cd B6 
+
+(digby39) d:\Research\gldb-mouse\B6>rm db/mouse_B6_IGK.csv 
+
+(digby39) d:\Research\gldb-mouse\B6>python ../../iglabel/iglabel.py create db/mouse_B6_IGK.csv 
+Creating database "db/mouse_B6_IGK.csv"
+Database created.
+
+(digby39) d:\Research\gldb-mouse\B6>python ../../iglabel/iglabel.py query db/mouse_B6_IGK.csv kos_et_al_2022_light_chain/IGK_V.fasta results.csv actions.csv 
+Querying database "db/mouse_B6_IGK.csv" for sequences in "kos_et_al_2022_light_chain/IGK_V.fasta"
+
+(digby39) d:\Research\gldb-mouse\B6>python ../../iglabel/iglabel.py add db/mouse_B6_IGK.csv actions.csv "Kos et al., 2022" 
+Database written to db/mouse_B6_IGK.csv. Previous version saved as db/mouse_B6_IGK_old.csv
+
+(digby39) d:\Research\gldb-mouse\B6>gap_inferred kos_et_al_2022_light_chain/IGK_V.fasta ../imgt/Mus_musculus_IGKV_gapped.fasta kos_et_al_2022_light_chain/IGK_V_gapped.fasta 
+Removing IGKV1-108*02 from reference: First cysteine not found
+Removing IGKV10-96*05 from reference: Stop codon in V-REGION
+Removing IGKV10-96*06 from reference: Conserved Trp not found
+Removing IGKV12-40*01 from reference: Stop codon in V-REGION
+Removing IGKV13-50-1*01 from reference: Stop codon in V-REGION
+Removing IGKV13-57-2*01 from reference: Stop codon in V-REGION
+Removing IGKV13-76*01 from reference: Stop codon in V-REGION
+Removing IGKV13-77-1*01 from reference: Stop codon in V-REGION
+Removing IGKV13-82*01 from reference: Stop codon in V-REGION
+Warning: reference sequence IGKV13-85*02: Sequence truncated before second cysteine (if you don't want to use this as a reference sequence, please remove it from the file)
+Warning: reference sequence IGKV13-85*03: Sequence truncated before second cysteine (if you don't want to use this as a reference sequence, please remove it from the file)
+Removing IGKV15-101*01 from reference: Stop codon in V-REGION
+Removing IGKV15-102*01 from reference: Stop codon in V-REGION
+Removing IGKV15-97*02 from reference: Stop codon in V-REGION
+Removing IGKV17/OR16-3*01 from reference: Second cysteine not found
+Removing IGKV17/OR19-2*01 from reference: Conserved Trp not found
+Removing IGKV3-8*01 from reference: Stop codon in V-REGION
+Removing IGKV4-52*01 from reference: Conserved Trp not found
+Removing IGKV4-54*01 from reference: Conserved Trp not found
+Removing IGKV4-65*02 from reference: Stop codon in V-REGION
+Removing IGKV4-75*01 from reference: Stop codon in V-REGION
+Removing IGKV4-77*01 from reference: Stop codon in V-REGION
+Removing IGKV4-83*01 from reference: Stop codon in V-REGION
+Removing IGKV9-119*01 from reference: Stop codon in V-REGION
+Removing IGKV9-128*01 from reference: Stop codon in V-REGION
+Removing IGKV9-129*01 from reference: Conserved Trp not found
+IGKV4-52*01_S2975_B6: Conserved Trp not found
+IGKV9-129*01_B6: Conserved Trp not found
+
+(digby39) d:\Research\gldb-mouse\B6>cd .. 
+
+(digby39) d:\Research\gldb-mouse>cd MSM_MsJ 
+
+(digby39) d:\Research\gldb-mouse\MSM_MsJ>rm db/mouse_MSM_MsJ_IGK.csv 
+
+(digby39) d:\Research\gldb-mouse\MSM_MsJ>python ../../iglabel/iglabel.py create db/mouse_MSM_MsJ_IGK.csv 
+Creating database "db/mouse_MSM_MsJ_IGK.csv"
+Database created.
+
+(digby39) d:\Research\gldb-mouse\MSM_MsJ>python ../../iglabel/iglabel.py query db/mouse_MSM_MsJ_IGK.csv kos_et_al_2022_light_chain/IGK_V.fasta results.csv actions.csv 
+Querying database "db/mouse_MSM_MsJ_IGK.csv" for sequences in "kos_et_al_2022_light_chain/IGK_V.fasta"
+
+(digby39) d:\Research\gldb-mouse\MSM_MsJ>python ../../iglabel/iglabel.py add db/mouse_MSM_MsJ_IGK.csv actions.csv "Kos et al., 2022" 
+Database written to db/mouse_MSM_MsJ_IGK.csv. Previous version saved as db/mouse_MSM_MsJ_IGK_old.csv
+
+(digby39) d:\Research\gldb-mouse\MSM_MsJ>gap_inferred kos_et_al_2022_light_chain/IGK_V.fasta ../imgt/Mus_musculus_IGKV_gapped.fasta kos_et_al_2022_light_chain/IGK_V_gapped.fasta 
+Removing IGKV1-108*02 from reference: First cysteine not found
+Removing IGKV10-96*05 from reference: Stop codon in V-REGION
+Removing IGKV10-96*06 from reference: Conserved Trp not found
+Removing IGKV12-40*01 from reference: Stop codon in V-REGION
+Removing IGKV13-50-1*01 from reference: Stop codon in V-REGION
+Removing IGKV13-57-2*01 from reference: Stop codon in V-REGION
+Removing IGKV13-76*01 from reference: Stop codon in V-REGION
+Removing IGKV13-77-1*01 from reference: Stop codon in V-REGION
+Removing IGKV13-82*01 from reference: Stop codon in V-REGION
+Warning: reference sequence IGKV13-85*02: Sequence truncated before second cysteine (if you don't want to use this as a reference sequence, please remove it from the file)
+Warning: reference sequence IGKV13-85*03: Sequence truncated before second cysteine (if you don't want to use this as a reference sequence, please remove it from the file)
+Removing IGKV15-101*01 from reference: Stop codon in V-REGION
+Removing IGKV15-102*01 from reference: Stop codon in V-REGION
+Removing IGKV15-97*02 from reference: Stop codon in V-REGION
+Removing IGKV17/OR16-3*01 from reference: Second cysteine not found
+Removing IGKV17/OR19-2*01 from reference: Conserved Trp not found
+Removing IGKV3-8*01 from reference: Stop codon in V-REGION
+Removing IGKV4-52*01 from reference: Conserved Trp not found
+Removing IGKV4-54*01 from reference: Conserved Trp not found
+Removing IGKV4-65*02 from reference: Stop codon in V-REGION
+Removing IGKV4-75*01 from reference: Stop codon in V-REGION
+Removing IGKV4-77*01 from reference: Stop codon in V-REGION
+Removing IGKV4-83*01 from reference: Stop codon in V-REGION
+Removing IGKV9-119*01 from reference: Stop codon in V-REGION
+Removing IGKV9-128*01 from reference: Stop codon in V-REGION
+Removing IGKV9-129*01 from reference: Conserved Trp not found
+IGKV5-45*01_S2588_MSM: Conserved Trp not found
+IGKV13-84*01_S4500_MSM: Conserved Trp not found
+
+(digby39) d:\Research\gldb-mouse\MSM_MsJ>cd .. 
+
+(digby39) d:\Research\gldb-mouse>cd 129S1_SvImJ 
+
+(digby39) d:\Research\gldb-mouse\129S1_SvImJ>rm db/mouse_129S1_SvImJ_IGK.csv 
+
+(digby39) d:\Research\gldb-mouse\129S1_SvImJ>python ../../iglabel/iglabel.py create db/mouse_129S1_SvImJ_IGK.csv 
+Creating database "db/mouse_129S1_SvImJ_IGK.csv"
+Database created.
+
+(digby39) d:\Research\gldb-mouse\129S1_SvImJ>python ../../iglabel/iglabel.py query db/mouse_129S1_SvImJ_IGK.csv kos_et_al_2022_light_chain/IGK_V.fasta results.csv actions.csv 
+Querying database "db/mouse_129S1_SvImJ_IGK.csv" for sequences in "kos_et_al_2022_light_chain/IGK_V.fasta"
+
+(digby39) d:\Research\gldb-mouse\129S1_SvImJ>python ../../iglabel/iglabel.py add db/mouse_129S1_SvImJ_IGK.csv actions.csv "Kos et al., 2022" 
+Database written to db/mouse_129S1_SvImJ_IGK.csv. Previous version saved as db/mouse_129S1_SvImJ_IGK_old.csv
+
+(digby39) d:\Research\gldb-mouse\129S1_SvImJ>gap_inferred kos_et_al_2022_light_chain/IGK_V.fasta ../imgt/Mus_musculus_IGKV_gapped.fasta kos_et_al_2022_light_chain/IGK_V_gapped.fasta 
+Removing IGKV1-108*02 from reference: First cysteine not found
+Removing IGKV10-96*05 from reference: Stop codon in V-REGION
+Removing IGKV10-96*06 from reference: Conserved Trp not found
+Removing IGKV12-40*01 from reference: Stop codon in V-REGION
+Removing IGKV13-50-1*01 from reference: Stop codon in V-REGION
+Removing IGKV13-57-2*01 from reference: Stop codon in V-REGION
+Removing IGKV13-76*01 from reference: Stop codon in V-REGION
+Removing IGKV13-77-1*01 from reference: Stop codon in V-REGION
+Removing IGKV13-82*01 from reference: Stop codon in V-REGION
+Warning: reference sequence IGKV13-85*02: Sequence truncated before second cysteine (if you don't want to use this as a reference sequence, please remove it from the file)
+Warning: reference sequence IGKV13-85*03: Sequence truncated before second cysteine (if you don't want to use this as a reference sequence, please remove it from the file)
+Removing IGKV15-101*01 from reference: Stop codon in V-REGION
+Removing IGKV15-102*01 from reference: Stop codon in V-REGION
+Removing IGKV15-97*02 from reference: Stop codon in V-REGION
+Removing IGKV17/OR16-3*01 from reference: Second cysteine not found
+Removing IGKV17/OR19-2*01 from reference: Conserved Trp not found
+Removing IGKV3-8*01 from reference: Stop codon in V-REGION
+Removing IGKV4-52*01 from reference: Conserved Trp not found
+Removing IGKV4-54*01 from reference: Conserved Trp not found
+Removing IGKV4-65*02 from reference: Stop codon in V-REGION
+Removing IGKV4-75*01 from reference: Stop codon in V-REGION
+Removing IGKV4-77*01 from reference: Stop codon in V-REGION
+Removing IGKV4-83*01 from reference: Stop codon in V-REGION
+Removing IGKV9-119*01 from reference: Stop codon in V-REGION
+Removing IGKV9-128*01 from reference: Stop codon in V-REGION
+Removing IGKV9-129*01 from reference: Conserved Trp not found
+IGKV4-52*01_S5019_129: Conserved Trp not found
+
+(digby39) d:\Research\gldb-mouse\129S1_SvImJ>cd .. 
+
+(digby39) d:\Research\gldb-mouse>cd A_J 
+
+(digby39) d:\Research\gldb-mouse\A_J>rm db/mouse_A_J_IGK.csv 
+
+(digby39) d:\Research\gldb-mouse\A_J>python ../../iglabel/iglabel.py create db/mouse_A_J_IGK.csv 
+Creating database "db/mouse_A_J_IGK.csv"
+Database created.
+
+(digby39) d:\Research\gldb-mouse\A_J>python ../../iglabel/iglabel.py query db/mouse_A_J_IGK.csv kos_et_al_2022_light_chain/IGK_V.fasta results.csv actions.csv 
+Querying database "db/mouse_A_J_IGK.csv" for sequences in "kos_et_al_2022_light_chain/IGK_V.fasta"
+
+(digby39) d:\Research\gldb-mouse\A_J>python ../../iglabel/iglabel.py add db/mouse_A_J_IGK.csv actions.csv "Kos et al., 2022" 
+Database written to db/mouse_A_J_IGK.csv. Previous version saved as db/mouse_A_J_IGK_old.csv
+
+(digby39) d:\Research\gldb-mouse\A_J>gap_inferred kos_et_al_2022_light_chain/IGK_V.fasta ../imgt/Mus_musculus_IGKV_gapped.fasta kos_et_al_2022_light_chain/IGK_V_gapped.fasta 
+Removing IGKV1-108*02 from reference: First cysteine not found
+Removing IGKV10-96*05 from reference: Stop codon in V-REGION
+Removing IGKV10-96*06 from reference: Conserved Trp not found
+Removing IGKV12-40*01 from reference: Stop codon in V-REGION
+Removing IGKV13-50-1*01 from reference: Stop codon in V-REGION
+Removing IGKV13-57-2*01 from reference: Stop codon in V-REGION
+Removing IGKV13-76*01 from reference: Stop codon in V-REGION
+Removing IGKV13-77-1*01 from reference: Stop codon in V-REGION
+Removing IGKV13-82*01 from reference: Stop codon in V-REGION
+Warning: reference sequence IGKV13-85*02: Sequence truncated before second cysteine (if you don't want to use this as a reference sequence, please remove it from the file)
+Warning: reference sequence IGKV13-85*03: Sequence truncated before second cysteine (if you don't want to use this as a reference sequence, please remove it from the file)
+Removing IGKV15-101*01 from reference: Stop codon in V-REGION
+Removing IGKV15-102*01 from reference: Stop codon in V-REGION
+Removing IGKV15-97*02 from reference: Stop codon in V-REGION
+Removing IGKV17/OR16-3*01 from reference: Second cysteine not found
+Removing IGKV17/OR19-2*01 from reference: Conserved Trp not found
+Removing IGKV3-8*01 from reference: Stop codon in V-REGION
+Removing IGKV4-52*01 from reference: Conserved Trp not found
+Removing IGKV4-54*01 from reference: Conserved Trp not found
+Removing IGKV4-65*02 from reference: Stop codon in V-REGION
+Removing IGKV4-75*01 from reference: Stop codon in V-REGION
+Removing IGKV4-77*01 from reference: Stop codon in V-REGION
+Removing IGKV4-83*01 from reference: Stop codon in V-REGION
+Removing IGKV9-119*01 from reference: Stop codon in V-REGION
+Removing IGKV9-128*01 from reference: Stop codon in V-REGION
+Removing IGKV9-129*01 from reference: Conserved Trp not found
+IGKV9-129*01_AJ: Conserved Trp not found
+IGKV4-52*01_AJ: Conserved Trp not found
+IGKV4-52*01_S5019_AJ: Conserved Trp not found
+
+(digby39) d:\Research\gldb-mouse\A_J>cd .. 
+
+(digby39) d:\Research\gldb-mouse>cd LEWES_EiJ 
+
+(digby39) d:\Research\gldb-mouse\LEWES_EiJ>rm db/mouse_LEWES_EiJ_IGK.csv 
+
+(digby39) d:\Research\gldb-mouse\LEWES_EiJ>python ../../iglabel/iglabel.py create db/mouse_LEWES_EiJ_IGK.csv 
+Creating database "db/mouse_LEWES_EiJ_IGK.csv"
+Database created.
+
+(digby39) d:\Research\gldb-mouse\LEWES_EiJ>python ../../iglabel/iglabel.py query db/mouse_LEWES_EiJ_IGK.csv kos_et_al_2022_light_chain/IGK_V.fasta results.csv actions.csv 
+Querying database "db/mouse_LEWES_EiJ_IGK.csv" for sequences in "kos_et_al_2022_light_chain/IGK_V.fasta"
+
+(digby39) d:\Research\gldb-mouse\LEWES_EiJ>python ../../iglabel/iglabel.py add db/mouse_LEWES_EiJ_IGK.csv actions.csv "Kos et al., 2022" 
+Database written to db/mouse_LEWES_EiJ_IGK.csv. Previous version saved as db/mouse_LEWES_EiJ_IGK_old.csv
+
+(digby39) d:\Research\gldb-mouse\LEWES_EiJ>gap_inferred kos_et_al_2022_light_chain/IGK_V.fasta ../imgt/Mus_musculus_IGKV_gapped.fasta kos_et_al_2022_light_chain/IGK_V_gapped.fasta 
+Removing IGKV1-108*02 from reference: First cysteine not found
+Removing IGKV10-96*05 from reference: Stop codon in V-REGION
+Removing IGKV10-96*06 from reference: Conserved Trp not found
+Removing IGKV12-40*01 from reference: Stop codon in V-REGION
+Removing IGKV13-50-1*01 from reference: Stop codon in V-REGION
+Removing IGKV13-57-2*01 from reference: Stop codon in V-REGION
+Removing IGKV13-76*01 from reference: Stop codon in V-REGION
+Removing IGKV13-77-1*01 from reference: Stop codon in V-REGION
+Removing IGKV13-82*01 from reference: Stop codon in V-REGION
+Warning: reference sequence IGKV13-85*02: Sequence truncated before second cysteine (if you don't want to use this as a reference sequence, please remove it from the file)
+Warning: reference sequence IGKV13-85*03: Sequence truncated before second cysteine (if you don't want to use this as a reference sequence, please remove it from the file)
+Removing IGKV15-101*01 from reference: Stop codon in V-REGION
+Removing IGKV15-102*01 from reference: Stop codon in V-REGION
+Removing IGKV15-97*02 from reference: Stop codon in V-REGION
+Removing IGKV17/OR16-3*01 from reference: Second cysteine not found
+Removing IGKV17/OR19-2*01 from reference: Conserved Trp not found
+Removing IGKV3-8*01 from reference: Stop codon in V-REGION
+Removing IGKV4-52*01 from reference: Conserved Trp not found
+Removing IGKV4-54*01 from reference: Conserved Trp not found
+Removing IGKV4-65*02 from reference: Stop codon in V-REGION
+Removing IGKV4-75*01 from reference: Stop codon in V-REGION
+Removing IGKV4-77*01 from reference: Stop codon in V-REGION
+Removing IGKV4-83*01 from reference: Stop codon in V-REGION
+Removing IGKV9-119*01 from reference: Stop codon in V-REGION
+Removing IGKV9-128*01 from reference: Stop codon in V-REGION
+Removing IGKV9-129*01 from reference: Conserved Trp not found
+
+(digby39) d:\Research\gldb-mouse\LEWES_EiJ>cd .. 
+
+(digby39) d:\Research\gldb-mouse>cd DBA_2J 
+
+(digby39) d:\Research\gldb-mouse\DBA_2J>rm db/mouse_DBA_2J_IGK.csv 
+
+(digby39) d:\Research\gldb-mouse\DBA_2J>python ../../iglabel/iglabel.py create db/mouse_DBA_2J_IGK.csv 
+Creating database "db/mouse_DBA_2J_IGK.csv"
+Database created.
+
+(digby39) d:\Research\gldb-mouse\DBA_2J>python ../../iglabel/iglabel.py query db/mouse_DBA_2J_IGK.csv kos_et_al_2022_light_chain/IGK_V.fasta results.csv actions.csv 
+Querying database "db/mouse_DBA_2J_IGK.csv" for sequences in "kos_et_al_2022_light_chain/IGK_V.fasta"
+
+(digby39) d:\Research\gldb-mouse\DBA_2J>python ../../iglabel/iglabel.py add db/mouse_DBA_2J_IGK.csv actions.csv "Kos et al., 2022" 
+Database written to db/mouse_DBA_2J_IGK.csv. Previous version saved as db/mouse_DBA_2J_IGK_old.csv
+
+(digby39) d:\Research\gldb-mouse\DBA_2J>gap_inferred kos_et_al_2022_light_chain/IGK_V.fasta ../imgt/Mus_musculus_IGKV_gapped.fasta kos_et_al_2022_light_chain/IGK_V_gapped.fasta 
+Removing IGKV1-108*02 from reference: First cysteine not found
+Removing IGKV10-96*05 from reference: Stop codon in V-REGION
+Removing IGKV10-96*06 from reference: Conserved Trp not found
+Removing IGKV12-40*01 from reference: Stop codon in V-REGION
+Removing IGKV13-50-1*01 from reference: Stop codon in V-REGION
+Removing IGKV13-57-2*01 from reference: Stop codon in V-REGION
+Removing IGKV13-76*01 from reference: Stop codon in V-REGION
+Removing IGKV13-77-1*01 from reference: Stop codon in V-REGION
+Removing IGKV13-82*01 from reference: Stop codon in V-REGION
+Warning: reference sequence IGKV13-85*02: Sequence truncated before second cysteine (if you don't want to use this as a reference sequence, please remove it from the file)
+Warning: reference sequence IGKV13-85*03: Sequence truncated before second cysteine (if you don't want to use this as a reference sequence, please remove it from the file)
+Removing IGKV15-101*01 from reference: Stop codon in V-REGION
+Removing IGKV15-102*01 from reference: Stop codon in V-REGION
+Removing IGKV15-97*02 from reference: Stop codon in V-REGION
+Removing IGKV17/OR16-3*01 from reference: Second cysteine not found
+Removing IGKV17/OR19-2*01 from reference: Conserved Trp not found
+Removing IGKV3-8*01 from reference: Stop codon in V-REGION
+Removing IGKV4-52*01 from reference: Conserved Trp not found
+Removing IGKV4-54*01 from reference: Conserved Trp not found
+Removing IGKV4-65*02 from reference: Stop codon in V-REGION
+Removing IGKV4-75*01 from reference: Stop codon in V-REGION
+Removing IGKV4-77*01 from reference: Stop codon in V-REGION
+Removing IGKV4-83*01 from reference: Stop codon in V-REGION
+Removing IGKV9-119*01 from reference: Stop codon in V-REGION
+Removing IGKV9-128*01 from reference: Stop codon in V-REGION
+Removing IGKV9-129*01 from reference: Conserved Trp not found
+IGKV9-129*01_DBA2: Conserved Trp not found
+IGKV4-52*01_DBA2: Conserved Trp not found
+IGKV4-52*01_S5019_DBA2: Conserved Trp not found
+
+(digby39) d:\Research\gldb-mouse\DBA_2J>cd .. 
+
+(digby39) d:\Research\gldb-mouse>cd DBA_1J 
+
+(digby39) d:\Research\gldb-mouse\DBA_1J>rm db/mouse_DBA_1J_IGK.csv 
+
+(digby39) d:\Research\gldb-mouse\DBA_1J>python ../../iglabel/iglabel.py create db/mouse_DBA_1J_IGK.csv 
+Creating database "db/mouse_DBA_1J_IGK.csv"
+Database created.
+
+(digby39) d:\Research\gldb-mouse\DBA_1J>python ../../iglabel/iglabel.py query db/mouse_DBA_1J_IGK.csv kos_et_al_2022_light_chain/IGK_V.fasta results.csv actions.csv 
+Querying database "db/mouse_DBA_1J_IGK.csv" for sequences in "kos_et_al_2022_light_chain/IGK_V.fasta"
+
+(digby39) d:\Research\gldb-mouse\DBA_1J>python ../../iglabel/iglabel.py add db/mouse_DBA_1J_IGK.csv actions.csv "Kos et al., 2022" 
+Database written to db/mouse_DBA_1J_IGK.csv. Previous version saved as db/mouse_DBA_1J_IGK_old.csv
+
+(digby39) d:\Research\gldb-mouse\DBA_1J>gap_inferred kos_et_al_2022_light_chain/IGK_V.fasta ../imgt/Mus_musculus_IGKV_gapped.fasta kos_et_al_2022_light_chain/IGK_V_gapped.fasta 
+Removing IGKV1-108*02 from reference: First cysteine not found
+Removing IGKV10-96*05 from reference: Stop codon in V-REGION
+Removing IGKV10-96*06 from reference: Conserved Trp not found
+Removing IGKV12-40*01 from reference: Stop codon in V-REGION
+Removing IGKV13-50-1*01 from reference: Stop codon in V-REGION
+Removing IGKV13-57-2*01 from reference: Stop codon in V-REGION
+Removing IGKV13-76*01 from reference: Stop codon in V-REGION
+Removing IGKV13-77-1*01 from reference: Stop codon in V-REGION
+Removing IGKV13-82*01 from reference: Stop codon in V-REGION
+Warning: reference sequence IGKV13-85*02: Sequence truncated before second cysteine (if you don't want to use this as a reference sequence, please remove it from the file)
+Warning: reference sequence IGKV13-85*03: Sequence truncated before second cysteine (if you don't want to use this as a reference sequence, please remove it from the file)
+Removing IGKV15-101*01 from reference: Stop codon in V-REGION
+Removing IGKV15-102*01 from reference: Stop codon in V-REGION
+Removing IGKV15-97*02 from reference: Stop codon in V-REGION
+Removing IGKV17/OR16-3*01 from reference: Second cysteine not found
+Removing IGKV17/OR19-2*01 from reference: Conserved Trp not found
+Removing IGKV3-8*01 from reference: Stop codon in V-REGION
+Removing IGKV4-52*01 from reference: Conserved Trp not found
+Removing IGKV4-54*01 from reference: Conserved Trp not found
+Removing IGKV4-65*02 from reference: Stop codon in V-REGION
+Removing IGKV4-75*01 from reference: Stop codon in V-REGION
+Removing IGKV4-77*01 from reference: Stop codon in V-REGION
+Removing IGKV4-83*01 from reference: Stop codon in V-REGION
+Removing IGKV9-119*01 from reference: Stop codon in V-REGION
+Removing IGKV9-128*01 from reference: Stop codon in V-REGION
+Removing IGKV9-129*01 from reference: Conserved Trp not found
+IGKV4-52*01_S2975_DBA1: Conserved Trp not found
+IGKV9-129*01_DBA1: Conserved Trp not found
+IGKV4-52*01_S5019_DBA1: Conserved Trp not found
+
+(digby39) d:\Research\gldb-mouse\DBA_1J>cd .. 
+
+(digby39) d:\Research\gldb-mouse>cd NOR_LtJ 
+
+(digby39) d:\Research\gldb-mouse\NOR_LtJ>rm db/mouse_NOR_LtJ_IGK.csv 
+
+(digby39) d:\Research\gldb-mouse\NOR_LtJ>python ../../iglabel/iglabel.py create db/mouse_NOR_LtJ_IGK.csv 
+Creating database "db/mouse_NOR_LtJ_IGK.csv"
+Database created.
+
+(digby39) d:\Research\gldb-mouse\NOR_LtJ>python ../../iglabel/iglabel.py query db/mouse_NOR_LtJ_IGK.csv kos_et_al_2022_light_chain/IGK_V.fasta results.csv actions.csv 
+Querying database "db/mouse_NOR_LtJ_IGK.csv" for sequences in "kos_et_al_2022_light_chain/IGK_V.fasta"
+
+(digby39) d:\Research\gldb-mouse\NOR_LtJ>python ../../iglabel/iglabel.py add db/mouse_NOR_LtJ_IGK.csv actions.csv "Kos et al., 2022" 
+Database written to db/mouse_NOR_LtJ_IGK.csv. Previous version saved as db/mouse_NOR_LtJ_IGK_old.csv
+
+(digby39) d:\Research\gldb-mouse\NOR_LtJ>gap_inferred kos_et_al_2022_light_chain/IGK_V.fasta ../imgt/Mus_musculus_IGKV_gapped.fasta kos_et_al_2022_light_chain/IGK_V_gapped.fasta 
+Removing IGKV1-108*02 from reference: First cysteine not found
+Removing IGKV10-96*05 from reference: Stop codon in V-REGION
+Removing IGKV10-96*06 from reference: Conserved Trp not found
+Removing IGKV12-40*01 from reference: Stop codon in V-REGION
+Removing IGKV13-50-1*01 from reference: Stop codon in V-REGION
+Removing IGKV13-57-2*01 from reference: Stop codon in V-REGION
+Removing IGKV13-76*01 from reference: Stop codon in V-REGION
+Removing IGKV13-77-1*01 from reference: Stop codon in V-REGION
+Removing IGKV13-82*01 from reference: Stop codon in V-REGION
+Warning: reference sequence IGKV13-85*02: Sequence truncated before second cysteine (if you don't want to use this as a reference sequence, please remove it from the file)
+Warning: reference sequence IGKV13-85*03: Sequence truncated before second cysteine (if you don't want to use this as a reference sequence, please remove it from the file)
+Removing IGKV15-101*01 from reference: Stop codon in V-REGION
+Removing IGKV15-102*01 from reference: Stop codon in V-REGION
+Removing IGKV15-97*02 from reference: Stop codon in V-REGION
+Removing IGKV17/OR16-3*01 from reference: Second cysteine not found
+Removing IGKV17/OR19-2*01 from reference: Conserved Trp not found
+Removing IGKV3-8*01 from reference: Stop codon in V-REGION
+Removing IGKV4-52*01 from reference: Conserved Trp not found
+Removing IGKV4-54*01 from reference: Conserved Trp not found
+Removing IGKV4-65*02 from reference: Stop codon in V-REGION
+Removing IGKV4-75*01 from reference: Stop codon in V-REGION
+Removing IGKV4-77*01 from reference: Stop codon in V-REGION
+Removing IGKV4-83*01 from reference: Stop codon in V-REGION
+Removing IGKV9-119*01 from reference: Stop codon in V-REGION
+Removing IGKV9-128*01 from reference: Stop codon in V-REGION
+Removing IGKV9-129*01 from reference: Conserved Trp not found
+
+(digby39) d:\Research\gldb-mouse\NOR_LtJ>cd .. 
+
+(digby39) d:\Research\gldb-mouse>cd AKR_J 
+
+(digby39) d:\Research\gldb-mouse\AKR_J>rm db/mouse_AKR_J_IGK.csv 
+
+(digby39) d:\Research\gldb-mouse\AKR_J>python ../../iglabel/iglabel.py create db/mouse_AKR_J_IGK.csv 
+Creating database "db/mouse_AKR_J_IGK.csv"
+Database created.
+
+(digby39) d:\Research\gldb-mouse\AKR_J>python ../../iglabel/iglabel.py query db/mouse_AKR_J_IGK.csv kos_et_al_2022_light_chain/IGK_V.fasta results.csv actions.csv 
+Querying database "db/mouse_AKR_J_IGK.csv" for sequences in "kos_et_al_2022_light_chain/IGK_V.fasta"
+
+(digby39) d:\Research\gldb-mouse\AKR_J>python ../../iglabel/iglabel.py add db/mouse_AKR_J_IGK.csv actions.csv "Kos et al., 2022" 
+Database written to db/mouse_AKR_J_IGK.csv. Previous version saved as db/mouse_AKR_J_IGK_old.csv
+
+(digby39) d:\Research\gldb-mouse\AKR_J>gap_inferred kos_et_al_2022_light_chain/IGK_V.fasta ../imgt/Mus_musculus_IGKV_gapped.fasta kos_et_al_2022_light_chain/IGK_V_gapped.fasta 
+Removing IGKV1-108*02 from reference: First cysteine not found
+Removing IGKV10-96*05 from reference: Stop codon in V-REGION
+Removing IGKV10-96*06 from reference: Conserved Trp not found
+Removing IGKV12-40*01 from reference: Stop codon in V-REGION
+Removing IGKV13-50-1*01 from reference: Stop codon in V-REGION
+Removing IGKV13-57-2*01 from reference: Stop codon in V-REGION
+Removing IGKV13-76*01 from reference: Stop codon in V-REGION
+Removing IGKV13-77-1*01 from reference: Stop codon in V-REGION
+Removing IGKV13-82*01 from reference: Stop codon in V-REGION
+Warning: reference sequence IGKV13-85*02: Sequence truncated before second cysteine (if you don't want to use this as a reference sequence, please remove it from the file)
+Warning: reference sequence IGKV13-85*03: Sequence truncated before second cysteine (if you don't want to use this as a reference sequence, please remove it from the file)
+Removing IGKV15-101*01 from reference: Stop codon in V-REGION
+Removing IGKV15-102*01 from reference: Stop codon in V-REGION
+Removing IGKV15-97*02 from reference: Stop codon in V-REGION
+Removing IGKV17/OR16-3*01 from reference: Second cysteine not found
+Removing IGKV17/OR19-2*01 from reference: Conserved Trp not found
+Removing IGKV3-8*01 from reference: Stop codon in V-REGION
+Removing IGKV4-52*01 from reference: Conserved Trp not found
+Removing IGKV4-54*01 from reference: Conserved Trp not found
+Removing IGKV4-65*02 from reference: Stop codon in V-REGION
+Removing IGKV4-75*01 from reference: Stop codon in V-REGION
+Removing IGKV4-77*01 from reference: Stop codon in V-REGION
+Removing IGKV4-83*01 from reference: Stop codon in V-REGION
+Removing IGKV9-119*01 from reference: Stop codon in V-REGION
+Removing IGKV9-128*01 from reference: Stop codon in V-REGION
+Removing IGKV9-129*01 from reference: Conserved Trp not found
+IGKV9-129*01_AKR: Conserved Trp not found
+
+(digby39) d:\Research\gldb-mouse\AKR_J>cd .. 
+
+(digby39) d:\Research\gldb-mouse>cd NOD_ShiLtJ 
+
+(digby39) d:\Research\gldb-mouse\NOD_ShiLtJ>rm db/mouse_NOD_ShiLtJ_IGK.csv 
+
+(digby39) d:\Research\gldb-mouse\NOD_ShiLtJ>python ../../iglabel/iglabel.py create db/mouse_NOD_ShiLtJ_IGK.csv 
+Creating database "db/mouse_NOD_ShiLtJ_IGK.csv"
+Database created.
+
+(digby39) d:\Research\gldb-mouse\NOD_ShiLtJ>python ../../iglabel/iglabel.py query db/mouse_NOD_ShiLtJ_IGK.csv kos_et_al_2022_light_chain/IGK_V.fasta results.csv actions.csv 
+Querying database "db/mouse_NOD_ShiLtJ_IGK.csv" for sequences in "kos_et_al_2022_light_chain/IGK_V.fasta"
+
+(digby39) d:\Research\gldb-mouse\NOD_ShiLtJ>python ../../iglabel/iglabel.py add db/mouse_NOD_ShiLtJ_IGK.csv actions.csv "Kos et al., 2022" 
+Database written to db/mouse_NOD_ShiLtJ_IGK.csv. Previous version saved as db/mouse_NOD_ShiLtJ_IGK_old.csv
+
+(digby39) d:\Research\gldb-mouse\NOD_ShiLtJ>gap_inferred kos_et_al_2022_light_chain/IGK_V.fasta ../imgt/Mus_musculus_IGKV_gapped.fasta kos_et_al_2022_light_chain/IGK_V_gapped.fasta 
+Removing IGKV1-108*02 from reference: First cysteine not found
+Removing IGKV10-96*05 from reference: Stop codon in V-REGION
+Removing IGKV10-96*06 from reference: Conserved Trp not found
+Removing IGKV12-40*01 from reference: Stop codon in V-REGION
+Removing IGKV13-50-1*01 from reference: Stop codon in V-REGION
+Removing IGKV13-57-2*01 from reference: Stop codon in V-REGION
+Removing IGKV13-76*01 from reference: Stop codon in V-REGION
+Removing IGKV13-77-1*01 from reference: Stop codon in V-REGION
+Removing IGKV13-82*01 from reference: Stop codon in V-REGION
+Warning: reference sequence IGKV13-85*02: Sequence truncated before second cysteine (if you don't want to use this as a reference sequence, please remove it from the file)
+Warning: reference sequence IGKV13-85*03: Sequence truncated before second cysteine (if you don't want to use this as a reference sequence, please remove it from the file)
+Removing IGKV15-101*01 from reference: Stop codon in V-REGION
+Removing IGKV15-102*01 from reference: Stop codon in V-REGION
+Removing IGKV15-97*02 from reference: Stop codon in V-REGION
+Removing IGKV17/OR16-3*01 from reference: Second cysteine not found
+Removing IGKV17/OR19-2*01 from reference: Conserved Trp not found
+Removing IGKV3-8*01 from reference: Stop codon in V-REGION
+Removing IGKV4-52*01 from reference: Conserved Trp not found
+Removing IGKV4-54*01 from reference: Conserved Trp not found
+Removing IGKV4-65*02 from reference: Stop codon in V-REGION
+Removing IGKV4-75*01 from reference: Stop codon in V-REGION
+Removing IGKV4-77*01 from reference: Stop codon in V-REGION
+Removing IGKV4-83*01 from reference: Stop codon in V-REGION
+Removing IGKV9-119*01 from reference: Stop codon in V-REGION
+Removing IGKV9-128*01 from reference: Stop codon in V-REGION
+Removing IGKV9-129*01 from reference: Conserved Trp not found
+
+(digby39) d:\Research\gldb-mouse\NOD_ShiLtJ>cd .. 
+
+(digby39) d:\Research\gldb-mouse>cd BALBC 
+
+(digby39) d:\Research\gldb-mouse\BALBC>rm db/mouse_BALBC_IGK.csv 
+
+(digby39) d:\Research\gldb-mouse\BALBC>python ../../iglabel/iglabel.py create db/mouse_BALBC_IGK.csv 
+Creating database "db/mouse_BALBC_IGK.csv"
+Database created.
+
+(digby39) d:\Research\gldb-mouse\BALBC>python ../../iglabel/iglabel.py query db/mouse_BALBC_IGK.csv kos_et_al_2022_light_chain/IGK_V.fasta results.csv actions.csv 
+Querying database "db/mouse_BALBC_IGK.csv" for sequences in "kos_et_al_2022_light_chain/IGK_V.fasta"
+
+(digby39) d:\Research\gldb-mouse\BALBC>python ../../iglabel/iglabel.py add db/mouse_BALBC_IGK.csv actions.csv "Kos et al., 2022" 
+Database written to db/mouse_BALBC_IGK.csv. Previous version saved as db/mouse_BALBC_IGK_old.csv
+
+(digby39) d:\Research\gldb-mouse\BALBC>gap_inferred kos_et_al_2022_light_chain/IGK_V.fasta ../imgt/Mus_musculus_IGKV_gapped.fasta kos_et_al_2022_light_chain/IGK_V_gapped.fasta 
+Removing IGKV1-108*02 from reference: First cysteine not found
+Removing IGKV10-96*05 from reference: Stop codon in V-REGION
+Removing IGKV10-96*06 from reference: Conserved Trp not found
+Removing IGKV12-40*01 from reference: Stop codon in V-REGION
+Removing IGKV13-50-1*01 from reference: Stop codon in V-REGION
+Removing IGKV13-57-2*01 from reference: Stop codon in V-REGION
+Removing IGKV13-76*01 from reference: Stop codon in V-REGION
+Removing IGKV13-77-1*01 from reference: Stop codon in V-REGION
+Removing IGKV13-82*01 from reference: Stop codon in V-REGION
+Warning: reference sequence IGKV13-85*02: Sequence truncated before second cysteine (if you don't want to use this as a reference sequence, please remove it from the file)
+Warning: reference sequence IGKV13-85*03: Sequence truncated before second cysteine (if you don't want to use this as a reference sequence, please remove it from the file)
+Removing IGKV15-101*01 from reference: Stop codon in V-REGION
+Removing IGKV15-102*01 from reference: Stop codon in V-REGION
+Removing IGKV15-97*02 from reference: Stop codon in V-REGION
+Removing IGKV17/OR16-3*01 from reference: Second cysteine not found
+Removing IGKV17/OR19-2*01 from reference: Conserved Trp not found
+Removing IGKV3-8*01 from reference: Stop codon in V-REGION
+Removing IGKV4-52*01 from reference: Conserved Trp not found
+Removing IGKV4-54*01 from reference: Conserved Trp not found
+Removing IGKV4-65*02 from reference: Stop codon in V-REGION
+Removing IGKV4-75*01 from reference: Stop codon in V-REGION
+Removing IGKV4-77*01 from reference: Stop codon in V-REGION
+Removing IGKV4-83*01 from reference: Stop codon in V-REGION
+Removing IGKV9-119*01 from reference: Stop codon in V-REGION
+Removing IGKV9-128*01 from reference: Stop codon in V-REGION
+Removing IGKV9-129*01 from reference: Conserved Trp not found
+IGKV4-52*01_BALB: Conserved Trp not found
+IGKV9-129*01_BALB: Conserved Trp not found
+
+(digby39) d:\Research\gldb-mouse\BALBC>cd .. 
+
+(digby39) d:\Research\gldb-mouse>cd MRL_MpJ 
+
+(digby39) d:\Research\gldb-mouse\MRL_MpJ>rm db/mouse_MRL_MpJ_IGK.csv 
+
+(digby39) d:\Research\gldb-mouse\MRL_MpJ>python ../../iglabel/iglabel.py create db/mouse_MRL_MpJ_IGK.csv 
+Creating database "db/mouse_MRL_MpJ_IGK.csv"
+Database created.
+
+(digby39) d:\Research\gldb-mouse\MRL_MpJ>python ../../iglabel/iglabel.py query db/mouse_MRL_MpJ_IGK.csv kos_et_al_2022_light_chain/IGK_V.fasta results.csv actions.csv 
+Querying database "db/mouse_MRL_MpJ_IGK.csv" for sequences in "kos_et_al_2022_light_chain/IGK_V.fasta"
+
+(digby39) d:\Research\gldb-mouse\MRL_MpJ>python ../../iglabel/iglabel.py add db/mouse_MRL_MpJ_IGK.csv actions.csv "Kos et al., 2022" 
+Database written to db/mouse_MRL_MpJ_IGK.csv. Previous version saved as db/mouse_MRL_MpJ_IGK_old.csv
+
+(digby39) d:\Research\gldb-mouse\MRL_MpJ>gap_inferred kos_et_al_2022_light_chain/IGK_V.fasta ../imgt/Mus_musculus_IGKV_gapped.fasta kos_et_al_2022_light_chain/IGK_V_gapped.fasta 
+Removing IGKV1-108*02 from reference: First cysteine not found
+Removing IGKV10-96*05 from reference: Stop codon in V-REGION
+Removing IGKV10-96*06 from reference: Conserved Trp not found
+Removing IGKV12-40*01 from reference: Stop codon in V-REGION
+Removing IGKV13-50-1*01 from reference: Stop codon in V-REGION
+Removing IGKV13-57-2*01 from reference: Stop codon in V-REGION
+Removing IGKV13-76*01 from reference: Stop codon in V-REGION
+Removing IGKV13-77-1*01 from reference: Stop codon in V-REGION
+Removing IGKV13-82*01 from reference: Stop codon in V-REGION
+Warning: reference sequence IGKV13-85*02: Sequence truncated before second cysteine (if you don't want to use this as a reference sequence, please remove it from the file)
+Warning: reference sequence IGKV13-85*03: Sequence truncated before second cysteine (if you don't want to use this as a reference sequence, please remove it from the file)
+Removing IGKV15-101*01 from reference: Stop codon in V-REGION
+Removing IGKV15-102*01 from reference: Stop codon in V-REGION
+Removing IGKV15-97*02 from reference: Stop codon in V-REGION
+Removing IGKV17/OR16-3*01 from reference: Second cysteine not found
+Removing IGKV17/OR19-2*01 from reference: Conserved Trp not found
+Removing IGKV3-8*01 from reference: Stop codon in V-REGION
+Removing IGKV4-52*01 from reference: Conserved Trp not found
+Removing IGKV4-54*01 from reference: Conserved Trp not found
+Removing IGKV4-65*02 from reference: Stop codon in V-REGION
+Removing IGKV4-75*01 from reference: Stop codon in V-REGION
+Removing IGKV4-77*01 from reference: Stop codon in V-REGION
+Removing IGKV4-83*01 from reference: Stop codon in V-REGION
+Removing IGKV9-119*01 from reference: Stop codon in V-REGION
+Removing IGKV9-128*01 from reference: Stop codon in V-REGION
+Removing IGKV9-129*01 from reference: Conserved Trp not found
+
+(digby39) d:\Research\gldb-mouse\MRL_MpJ>cd .. 
+
+(digby39) d:\Research\gldb-mouse>cd CAST_EiJ 
+
+(digby39) d:\Research\gldb-mouse\CAST_EiJ>rm db/mouse_CAST_EiJ_IGK.csv 
+
+(digby39) d:\Research\gldb-mouse\CAST_EiJ>python ../../iglabel/iglabel.py create db/mouse_CAST_EiJ_IGK.csv 
+Creating database "db/mouse_CAST_EiJ_IGK.csv"
+Database created.
+
+(digby39) d:\Research\gldb-mouse\CAST_EiJ>python ../../iglabel/iglabel.py query db/mouse_CAST_EiJ_IGK.csv kos_et_al_2022_light_chain/IGK_V.fasta results.csv actions.csv 
+Querying database "db/mouse_CAST_EiJ_IGK.csv" for sequences in "kos_et_al_2022_light_chain/IGK_V.fasta"
+
+(digby39) d:\Research\gldb-mouse\CAST_EiJ>python ../../iglabel/iglabel.py add db/mouse_CAST_EiJ_IGK.csv actions.csv "Kos et al., 2022" 
+Database written to db/mouse_CAST_EiJ_IGK.csv. Previous version saved as db/mouse_CAST_EiJ_IGK_old.csv
+
+(digby39) d:\Research\gldb-mouse\CAST_EiJ>gap_inferred kos_et_al_2022_light_chain/IGK_V.fasta ../imgt/Mus_musculus_IGKV_gapped.fasta kos_et_al_2022_light_chain/IGK_V_gapped.fasta 
+Removing IGKV1-108*02 from reference: First cysteine not found
+Removing IGKV10-96*05 from reference: Stop codon in V-REGION
+Removing IGKV10-96*06 from reference: Conserved Trp not found
+Removing IGKV12-40*01 from reference: Stop codon in V-REGION
+Removing IGKV13-50-1*01 from reference: Stop codon in V-REGION
+Removing IGKV13-57-2*01 from reference: Stop codon in V-REGION
+Removing IGKV13-76*01 from reference: Stop codon in V-REGION
+Removing IGKV13-77-1*01 from reference: Stop codon in V-REGION
+Removing IGKV13-82*01 from reference: Stop codon in V-REGION
+Warning: reference sequence IGKV13-85*02: Sequence truncated before second cysteine (if you don't want to use this as a reference sequence, please remove it from the file)
+Warning: reference sequence IGKV13-85*03: Sequence truncated before second cysteine (if you don't want to use this as a reference sequence, please remove it from the file)
+Removing IGKV15-101*01 from reference: Stop codon in V-REGION
+Removing IGKV15-102*01 from reference: Stop codon in V-REGION
+Removing IGKV15-97*02 from reference: Stop codon in V-REGION
+Removing IGKV17/OR16-3*01 from reference: Second cysteine not found
+Removing IGKV17/OR19-2*01 from reference: Conserved Trp not found
+Removing IGKV3-8*01 from reference: Stop codon in V-REGION
+Removing IGKV4-52*01 from reference: Conserved Trp not found
+Removing IGKV4-54*01 from reference: Conserved Trp not found
+Removing IGKV4-65*02 from reference: Stop codon in V-REGION
+Removing IGKV4-75*01 from reference: Stop codon in V-REGION
+Removing IGKV4-77*01 from reference: Stop codon in V-REGION
+Removing IGKV4-83*01 from reference: Stop codon in V-REGION
+Removing IGKV9-119*01 from reference: Stop codon in V-REGION
+Removing IGKV9-128*01 from reference: Stop codon in V-REGION
+Removing IGKV9-129*01 from reference: Conserved Trp not found
+IGKV10-96*06_CAST: Conserved Trp not found
+
+(digby39) d:\Research\gldb-mouse\CAST_EiJ>cd .. 
+
+(digby39) d:\Research\gldb-mouse>cd CAST_EiJ 
+
+(digby39) d:\Research\gldb-mouse\CAST_EiJ>rm db/mouse_CAST_EiJ_IGL.csv 
+
+(digby39) d:\Research\gldb-mouse\CAST_EiJ>python ../../iglabel/iglabel.py create db/mouse_CAST_EiJ_IGL.csv 
+Creating database "db/mouse_CAST_EiJ_IGL.csv"
+Database created.
+
+(digby39) d:\Research\gldb-mouse\CAST_EiJ>python ../../iglabel/iglabel.py query db/mouse_CAST_EiJ_IGL.csv kos_et_al_2022_light_chain/IGL_V.fasta results.csv actions.csv 
+Querying database "db/mouse_CAST_EiJ_IGL.csv" for sequences in "kos_et_al_2022_light_chain/IGL_V.fasta"
+
+(digby39) d:\Research\gldb-mouse\CAST_EiJ>python ../../iglabel/iglabel.py add db/mouse_CAST_EiJ_IGL.csv actions.csv "Kos et al., 2022" 
+Database written to db/mouse_CAST_EiJ_IGL.csv. Previous version saved as db/mouse_CAST_EiJ_IGL_old.csv
+
+(digby39) d:\Research\gldb-mouse\CAST_EiJ>gap_inferred kos_et_al_2022_light_chain/IGL_V.fasta ../imgt/Mus_musculus_IGLV_gapped.fasta kos_et_al_2022_light_chain/IGL_V_gapped.fasta 
+Warning: reference sequence IGLV4*01: Sequence truncated before second cysteine (if you don't want to use this as a reference sequence, please remove it from the file)
+Warning: reference sequence IGLV5*01: Sequence truncated before second cysteine (if you don't want to use this as a reference sequence, please remove it from the file)
+Warning: reference sequence IGLV6*01: Sequence truncated before second cysteine (if you don't want to use this as a reference sequence, please remove it from the file)
+Warning: reference sequence IGLV6*02: Sequence truncated before second cysteine (if you don't want to use this as a reference sequence, please remove it from the file)
+Warning: reference sequence IGLV6*03: Sequence truncated before second cysteine (if you don't want to use this as a reference sequence, please remove it from the file)
+Warning: reference sequence IGLV7*01: Sequence truncated before second cysteine (if you don't want to use this as a reference sequence, please remove it from the file)
+Warning: reference sequence IGLV7*02: Sequence truncated before second cysteine (if you don't want to use this as a reference sequence, please remove it from the file)
+Warning: reference sequence IGLV8*01: Sequence truncated before second cysteine (if you don't want to use this as a reference sequence, please remove it from the file)
+Warning: reference sequence IGLV8*02: Sequence truncated before second cysteine (if you don't want to use this as a reference sequence, please remove it from the file)
+IGLV5*01_CAST: Stop codon in V-REGION
+IGLV6*01_CAST: Stop codon in V-REGION
+IGLV4*01_CAST: Stop codon in V-REGION
+IGLV8*01_CAST: Stop codon in V-REGION
+IGLV7*01_CAST: Stop codon in V-REGION
+
+(digby39) d:\Research\gldb-mouse\CAST_EiJ>cd .. 
+
+(digby39) d:\Research\gldb-mouse>cd MSM_MsJ 
+
+(digby39) d:\Research\gldb-mouse\MSM_MsJ>rm db/mouse_MSM_MsJ_IGL.csv 
+
+(digby39) d:\Research\gldb-mouse\MSM_MsJ>python ../../iglabel/iglabel.py create db/mouse_MSM_MsJ_IGL.csv 
+Creating database "db/mouse_MSM_MsJ_IGL.csv"
+Database created.
+
+(digby39) d:\Research\gldb-mouse\MSM_MsJ>python ../../iglabel/iglabel.py query db/mouse_MSM_MsJ_IGL.csv kos_et_al_2022_light_chain/IGL_V.fasta results.csv actions.csv 
+Querying database "db/mouse_MSM_MsJ_IGL.csv" for sequences in "kos_et_al_2022_light_chain/IGL_V.fasta"
+
+(digby39) d:\Research\gldb-mouse\MSM_MsJ>python ../../iglabel/iglabel.py add db/mouse_MSM_MsJ_IGL.csv actions.csv "Kos et al., 2022" 
+Database written to db/mouse_MSM_MsJ_IGL.csv. Previous version saved as db/mouse_MSM_MsJ_IGL_old.csv
+
+(digby39) d:\Research\gldb-mouse\MSM_MsJ>gap_inferred kos_et_al_2022_light_chain/IGL_V.fasta ../imgt/Mus_musculus_IGLV_gapped.fasta kos_et_al_2022_light_chain/IGL_V_gapped.fasta 
+Warning: reference sequence IGLV4*01: Sequence truncated before second cysteine (if you don't want to use this as a reference sequence, please remove it from the file)
+Warning: reference sequence IGLV5*01: Sequence truncated before second cysteine (if you don't want to use this as a reference sequence, please remove it from the file)
+Warning: reference sequence IGLV6*01: Sequence truncated before second cysteine (if you don't want to use this as a reference sequence, please remove it from the file)
+Warning: reference sequence IGLV6*02: Sequence truncated before second cysteine (if you don't want to use this as a reference sequence, please remove it from the file)
+Warning: reference sequence IGLV6*03: Sequence truncated before second cysteine (if you don't want to use this as a reference sequence, please remove it from the file)
+Warning: reference sequence IGLV7*01: Sequence truncated before second cysteine (if you don't want to use this as a reference sequence, please remove it from the file)
+Warning: reference sequence IGLV7*02: Sequence truncated before second cysteine (if you don't want to use this as a reference sequence, please remove it from the file)
+Warning: reference sequence IGLV8*01: Sequence truncated before second cysteine (if you don't want to use this as a reference sequence, please remove it from the file)
+Warning: reference sequence IGLV8*02: Sequence truncated before second cysteine (if you don't want to use this as a reference sequence, please remove it from the file)
+IGLV5*01_MSM: Stop codon in V-REGION
+IGLV6*03_MSM: Stop codon in V-REGION
+
+(digby39) d:\Research\gldb-mouse\MSM_MsJ>cd .. 
+
+(digby39) d:\Research\gldb-mouse>cd PWD_PhJ 
+
+(digby39) d:\Research\gldb-mouse\PWD_PhJ>rm db/mouse_PWD_PhJ_IGL.csv 
+
+(digby39) d:\Research\gldb-mouse\PWD_PhJ>python ../../iglabel/iglabel.py create db/mouse_PWD_PhJ_IGL.csv 
+Creating database "db/mouse_PWD_PhJ_IGL.csv"
+Database created.
+
+(digby39) d:\Research\gldb-mouse\PWD_PhJ>python ../../iglabel/iglabel.py query db/mouse_PWD_PhJ_IGL.csv kos_et_al_2022_light_chain/IGL_V.fasta results.csv actions.csv 
+Querying database "db/mouse_PWD_PhJ_IGL.csv" for sequences in "kos_et_al_2022_light_chain/IGL_V.fasta"
+
+(digby39) d:\Research\gldb-mouse\PWD_PhJ>python ../../iglabel/iglabel.py add db/mouse_PWD_PhJ_IGL.csv actions.csv "Kos et al., 2022" 
+Database written to db/mouse_PWD_PhJ_IGL.csv. Previous version saved as db/mouse_PWD_PhJ_IGL_old.csv
+
+(digby39) d:\Research\gldb-mouse\PWD_PhJ>gap_inferred kos_et_al_2022_light_chain/IGL_V.fasta ../imgt/Mus_musculus_IGLV_gapped.fasta kos_et_al_2022_light_chain/IGL_V_gapped.fasta 
+Warning: reference sequence IGLV4*01: Sequence truncated before second cysteine (if you don't want to use this as a reference sequence, please remove it from the file)
+Warning: reference sequence IGLV5*01: Sequence truncated before second cysteine (if you don't want to use this as a reference sequence, please remove it from the file)
+Warning: reference sequence IGLV6*01: Sequence truncated before second cysteine (if you don't want to use this as a reference sequence, please remove it from the file)
+Warning: reference sequence IGLV6*02: Sequence truncated before second cysteine (if you don't want to use this as a reference sequence, please remove it from the file)
+Warning: reference sequence IGLV6*03: Sequence truncated before second cysteine (if you don't want to use this as a reference sequence, please remove it from the file)
+Warning: reference sequence IGLV7*01: Sequence truncated before second cysteine (if you don't want to use this as a reference sequence, please remove it from the file)
+Warning: reference sequence IGLV7*02: Sequence truncated before second cysteine (if you don't want to use this as a reference sequence, please remove it from the file)
+Warning: reference sequence IGLV8*01: Sequence truncated before second cysteine (if you don't want to use this as a reference sequence, please remove it from the file)
+Warning: reference sequence IGLV8*02: Sequence truncated before second cysteine (if you don't want to use this as a reference sequence, please remove it from the file)
+
+(digby39) d:\Research\gldb-mouse\PWD_PhJ>cd .. 
+
+(digby39) d:\Research\gldb-mouse>cd LEWES_EiJ 
+
+(digby39) d:\Research\gldb-mouse\LEWES_EiJ>rm db/mouse_LEWES_EiJ_IGL.csv 
+
+(digby39) d:\Research\gldb-mouse\LEWES_EiJ>python ../../iglabel/iglabel.py create db/mouse_LEWES_EiJ_IGL.csv 
+Creating database "db/mouse_LEWES_EiJ_IGL.csv"
+Database created.
+
+(digby39) d:\Research\gldb-mouse\LEWES_EiJ>python ../../iglabel/iglabel.py query db/mouse_LEWES_EiJ_IGL.csv kos_et_al_2022_light_chain/IGL_V.fasta results.csv actions.csv 
+Querying database "db/mouse_LEWES_EiJ_IGL.csv" for sequences in "kos_et_al_2022_light_chain/IGL_V.fasta"
+
+(digby39) d:\Research\gldb-mouse\LEWES_EiJ>python ../../iglabel/iglabel.py add db/mouse_LEWES_EiJ_IGL.csv actions.csv "Kos et al., 2022" 
+Database written to db/mouse_LEWES_EiJ_IGL.csv. Previous version saved as db/mouse_LEWES_EiJ_IGL_old.csv
+
+(digby39) d:\Research\gldb-mouse\LEWES_EiJ>gap_inferred kos_et_al_2022_light_chain/IGL_V.fasta ../imgt/Mus_musculus_IGLV_gapped.fasta kos_et_al_2022_light_chain/IGL_V_gapped.fasta 
+Warning: reference sequence IGLV4*01: Sequence truncated before second cysteine (if you don't want to use this as a reference sequence, please remove it from the file)
+Warning: reference sequence IGLV5*01: Sequence truncated before second cysteine (if you don't want to use this as a reference sequence, please remove it from the file)
+Warning: reference sequence IGLV6*01: Sequence truncated before second cysteine (if you don't want to use this as a reference sequence, please remove it from the file)
+Warning: reference sequence IGLV6*02: Sequence truncated before second cysteine (if you don't want to use this as a reference sequence, please remove it from the file)
+Warning: reference sequence IGLV6*03: Sequence truncated before second cysteine (if you don't want to use this as a reference sequence, please remove it from the file)
+Warning: reference sequence IGLV7*01: Sequence truncated before second cysteine (if you don't want to use this as a reference sequence, please remove it from the file)
+Warning: reference sequence IGLV7*02: Sequence truncated before second cysteine (if you don't want to use this as a reference sequence, please remove it from the file)
+Warning: reference sequence IGLV8*01: Sequence truncated before second cysteine (if you don't want to use this as a reference sequence, please remove it from the file)
+Warning: reference sequence IGLV8*02: Sequence truncated before second cysteine (if you don't want to use this as a reference sequence, please remove it from the file)
+
+(digby39) d:\Research\gldb-mouse\LEWES_EiJ>cd .. 
+
+(digby39) d:\Research\gldb-mouse>cd CBA_J 
+
+(digby39) d:\Research\gldb-mouse\CBA_J>rm db/mouse_CBA_J_IGL.csv 
+
+(digby39) d:\Research\gldb-mouse\CBA_J>python ../../iglabel/iglabel.py create db/mouse_CBA_J_IGL.csv 
+Creating database "db/mouse_CBA_J_IGL.csv"
+Database created.
+
+(digby39) d:\Research\gldb-mouse\CBA_J>python ../../iglabel/iglabel.py query db/mouse_CBA_J_IGL.csv kos_et_al_2022_light_chain/IGL_V.fasta results.csv actions.csv 
+Querying database "db/mouse_CBA_J_IGL.csv" for sequences in "kos_et_al_2022_light_chain/IGL_V.fasta"
+
+(digby39) d:\Research\gldb-mouse\CBA_J>python ../../iglabel/iglabel.py add db/mouse_CBA_J_IGL.csv actions.csv "Kos et al., 2022" 
+Database written to db/mouse_CBA_J_IGL.csv. Previous version saved as db/mouse_CBA_J_IGL_old.csv
+
+(digby39) d:\Research\gldb-mouse\CBA_J>gap_inferred kos_et_al_2022_light_chain/IGL_V.fasta ../imgt/Mus_musculus_IGLV_gapped.fasta kos_et_al_2022_light_chain/IGL_V_gapped.fasta 
+Warning: reference sequence IGLV4*01: Sequence truncated before second cysteine (if you don't want to use this as a reference sequence, please remove it from the file)
+Warning: reference sequence IGLV5*01: Sequence truncated before second cysteine (if you don't want to use this as a reference sequence, please remove it from the file)
+Warning: reference sequence IGLV6*01: Sequence truncated before second cysteine (if you don't want to use this as a reference sequence, please remove it from the file)
+Warning: reference sequence IGLV6*02: Sequence truncated before second cysteine (if you don't want to use this as a reference sequence, please remove it from the file)
+Warning: reference sequence IGLV6*03: Sequence truncated before second cysteine (if you don't want to use this as a reference sequence, please remove it from the file)
+Warning: reference sequence IGLV7*01: Sequence truncated before second cysteine (if you don't want to use this as a reference sequence, please remove it from the file)
+Warning: reference sequence IGLV7*02: Sequence truncated before second cysteine (if you don't want to use this as a reference sequence, please remove it from the file)
+Warning: reference sequence IGLV8*01: Sequence truncated before second cysteine (if you don't want to use this as a reference sequence, please remove it from the file)
+Warning: reference sequence IGLV8*02: Sequence truncated before second cysteine (if you don't want to use this as a reference sequence, please remove it from the file)
+
+(digby39) d:\Research\gldb-mouse\CBA_J>cd .. 
+
+(digby39) d:\Research\gldb-mouse>cd MRL_MpJ 
+
+(digby39) d:\Research\gldb-mouse\MRL_MpJ>rm db/mouse_MRL_MpJ_IGL.csv 
+
+(digby39) d:\Research\gldb-mouse\MRL_MpJ>python ../../iglabel/iglabel.py create db/mouse_MRL_MpJ_IGL.csv 
+Creating database "db/mouse_MRL_MpJ_IGL.csv"
+Database created.
+
+(digby39) d:\Research\gldb-mouse\MRL_MpJ>python ../../iglabel/iglabel.py query db/mouse_MRL_MpJ_IGL.csv kos_et_al_2022_light_chain/IGL_V.fasta results.csv actions.csv 
+Querying database "db/mouse_MRL_MpJ_IGL.csv" for sequences in "kos_et_al_2022_light_chain/IGL_V.fasta"
+
+(digby39) d:\Research\gldb-mouse\MRL_MpJ>python ../../iglabel/iglabel.py add db/mouse_MRL_MpJ_IGL.csv actions.csv "Kos et al., 2022" 
+Database written to db/mouse_MRL_MpJ_IGL.csv. Previous version saved as db/mouse_MRL_MpJ_IGL_old.csv
+
+(digby39) d:\Research\gldb-mouse\MRL_MpJ>gap_inferred kos_et_al_2022_light_chain/IGL_V.fasta ../imgt/Mus_musculus_IGLV_gapped.fasta kos_et_al_2022_light_chain/IGL_V_gapped.fasta 
+Warning: reference sequence IGLV4*01: Sequence truncated before second cysteine (if you don't want to use this as a reference sequence, please remove it from the file)
+Warning: reference sequence IGLV5*01: Sequence truncated before second cysteine (if you don't want to use this as a reference sequence, please remove it from the file)
+Warning: reference sequence IGLV6*01: Sequence truncated before second cysteine (if you don't want to use this as a reference sequence, please remove it from the file)
+Warning: reference sequence IGLV6*02: Sequence truncated before second cysteine (if you don't want to use this as a reference sequence, please remove it from the file)
+Warning: reference sequence IGLV6*03: Sequence truncated before second cysteine (if you don't want to use this as a reference sequence, please remove it from the file)
+Warning: reference sequence IGLV7*01: Sequence truncated before second cysteine (if you don't want to use this as a reference sequence, please remove it from the file)
+Warning: reference sequence IGLV7*02: Sequence truncated before second cysteine (if you don't want to use this as a reference sequence, please remove it from the file)
+Warning: reference sequence IGLV8*01: Sequence truncated before second cysteine (if you don't want to use this as a reference sequence, please remove it from the file)
+Warning: reference sequence IGLV8*02: Sequence truncated before second cysteine (if you don't want to use this as a reference sequence, please remove it from the file)
+
+(digby39) d:\Research\gldb-mouse\MRL_MpJ>cd .. 
+
+(digby39) d:\Research\gldb-mouse>cd SJL_J 
+
+(digby39) d:\Research\gldb-mouse\SJL_J>rm db/mouse_SJL_J_IGL.csv 
+
+(digby39) d:\Research\gldb-mouse\SJL_J>python ../../iglabel/iglabel.py create db/mouse_SJL_J_IGL.csv 
+Creating database "db/mouse_SJL_J_IGL.csv"
+Database created.
+
+(digby39) d:\Research\gldb-mouse\SJL_J>python ../../iglabel/iglabel.py query db/mouse_SJL_J_IGL.csv kos_et_al_2022_light_chain/IGL_V.fasta results.csv actions.csv 
+Querying database "db/mouse_SJL_J_IGL.csv" for sequences in "kos_et_al_2022_light_chain/IGL_V.fasta"
+
+(digby39) d:\Research\gldb-mouse\SJL_J>python ../../iglabel/iglabel.py add db/mouse_SJL_J_IGL.csv actions.csv "Kos et al., 2022" 
+Database written to db/mouse_SJL_J_IGL.csv. Previous version saved as db/mouse_SJL_J_IGL_old.csv
+
+(digby39) d:\Research\gldb-mouse\SJL_J>gap_inferred kos_et_al_2022_light_chain/IGL_V.fasta ../imgt/Mus_musculus_IGLV_gapped.fasta kos_et_al_2022_light_chain/IGL_V_gapped.fasta 
+Warning: reference sequence IGLV4*01: Sequence truncated before second cysteine (if you don't want to use this as a reference sequence, please remove it from the file)
+Warning: reference sequence IGLV5*01: Sequence truncated before second cysteine (if you don't want to use this as a reference sequence, please remove it from the file)
+Warning: reference sequence IGLV6*01: Sequence truncated before second cysteine (if you don't want to use this as a reference sequence, please remove it from the file)
+Warning: reference sequence IGLV6*02: Sequence truncated before second cysteine (if you don't want to use this as a reference sequence, please remove it from the file)
+Warning: reference sequence IGLV6*03: Sequence truncated before second cysteine (if you don't want to use this as a reference sequence, please remove it from the file)
+Warning: reference sequence IGLV7*01: Sequence truncated before second cysteine (if you don't want to use this as a reference sequence, please remove it from the file)
+Warning: reference sequence IGLV7*02: Sequence truncated before second cysteine (if you don't want to use this as a reference sequence, please remove it from the file)
+Warning: reference sequence IGLV8*01: Sequence truncated before second cysteine (if you don't want to use this as a reference sequence, please remove it from the file)
+Warning: reference sequence IGLV8*02: Sequence truncated before second cysteine (if you don't want to use this as a reference sequence, please remove it from the file)
+
+(digby39) d:\Research\gldb-mouse\SJL_J>cd .. 
+
+(digby39) d:\Research\gldb-mouse>cd 129S1_SvlmJ 
+
+(digby39) d:\Research\gldb-mouse\129S1_SvlmJ>rm db/mouse_129S1_SvlmJ_IGL.csv 
+
+(digby39) d:\Research\gldb-mouse\129S1_SvlmJ>python ../../iglabel/iglabel.py create db/mouse_129S1_SvlmJ_IGL.csv 
+Creating database "db/mouse_129S1_SvlmJ_IGL.csv"
+Database created.
+
+(digby39) d:\Research\gldb-mouse\129S1_SvlmJ>python ../../iglabel/iglabel.py query db/mouse_129S1_SvlmJ_IGL.csv kos_et_al_2022_light_chain/IGL_V.fasta results.csv actions.csv 
+Querying database "db/mouse_129S1_SvlmJ_IGL.csv" for sequences in "kos_et_al_2022_light_chain/IGL_V.fasta"
+
+(digby39) d:\Research\gldb-mouse\129S1_SvlmJ>python ../../iglabel/iglabel.py add db/mouse_129S1_SvlmJ_IGL.csv actions.csv "Kos et al., 2022" 
+Database written to db/mouse_129S1_SvlmJ_IGL.csv. Previous version saved as db/mouse_129S1_SvlmJ_IGL_old.csv
+
+(digby39) d:\Research\gldb-mouse\129S1_SvlmJ>gap_inferred kos_et_al_2022_light_chain/IGL_V.fasta ../imgt/Mus_musculus_IGLV_gapped.fasta kos_et_al_2022_light_chain/IGL_V_gapped.fasta 
+Warning: reference sequence IGLV4*01: Sequence truncated before second cysteine (if you don't want to use this as a reference sequence, please remove it from the file)
+Warning: reference sequence IGLV5*01: Sequence truncated before second cysteine (if you don't want to use this as a reference sequence, please remove it from the file)
+Warning: reference sequence IGLV6*01: Sequence truncated before second cysteine (if you don't want to use this as a reference sequence, please remove it from the file)
+Warning: reference sequence IGLV6*02: Sequence truncated before second cysteine (if you don't want to use this as a reference sequence, please remove it from the file)
+Warning: reference sequence IGLV6*03: Sequence truncated before second cysteine (if you don't want to use this as a reference sequence, please remove it from the file)
+Warning: reference sequence IGLV7*01: Sequence truncated before second cysteine (if you don't want to use this as a reference sequence, please remove it from the file)
+Warning: reference sequence IGLV7*02: Sequence truncated before second cysteine (if you don't want to use this as a reference sequence, please remove it from the file)
+Warning: reference sequence IGLV8*01: Sequence truncated before second cysteine (if you don't want to use this as a reference sequence, please remove it from the file)
+Warning: reference sequence IGLV8*02: Sequence truncated before second cysteine (if you don't want to use this as a reference sequence, please remove it from the file)
+
+(digby39) d:\Research\gldb-mouse\129S1_SvlmJ>cd .. 
+
+(digby39) d:\Research\gldb-mouse>cd A_J 
+
+(digby39) d:\Research\gldb-mouse\A_J>rm db/mouse_A_J_IGL.csv 
+
+(digby39) d:\Research\gldb-mouse\A_J>python ../../iglabel/iglabel.py create db/mouse_A_J_IGL.csv 
+Creating database "db/mouse_A_J_IGL.csv"
+Database created.
+
+(digby39) d:\Research\gldb-mouse\A_J>python ../../iglabel/iglabel.py query db/mouse_A_J_IGL.csv kos_et_al_2022_light_chain/IGL_V.fasta results.csv actions.csv 
+Querying database "db/mouse_A_J_IGL.csv" for sequences in "kos_et_al_2022_light_chain/IGL_V.fasta"
+
+(digby39) d:\Research\gldb-mouse\A_J>python ../../iglabel/iglabel.py add db/mouse_A_J_IGL.csv actions.csv "Kos et al., 2022" 
+Database written to db/mouse_A_J_IGL.csv. Previous version saved as db/mouse_A_J_IGL_old.csv
+
+(digby39) d:\Research\gldb-mouse\A_J>gap_inferred kos_et_al_2022_light_chain/IGL_V.fasta ../imgt/Mus_musculus_IGLV_gapped.fasta kos_et_al_2022_light_chain/IGL_V_gapped.fasta 
+Warning: reference sequence IGLV4*01: Sequence truncated before second cysteine (if you don't want to use this as a reference sequence, please remove it from the file)
+Warning: reference sequence IGLV5*01: Sequence truncated before second cysteine (if you don't want to use this as a reference sequence, please remove it from the file)
+Warning: reference sequence IGLV6*01: Sequence truncated before second cysteine (if you don't want to use this as a reference sequence, please remove it from the file)
+Warning: reference sequence IGLV6*02: Sequence truncated before second cysteine (if you don't want to use this as a reference sequence, please remove it from the file)
+Warning: reference sequence IGLV6*03: Sequence truncated before second cysteine (if you don't want to use this as a reference sequence, please remove it from the file)
+Warning: reference sequence IGLV7*01: Sequence truncated before second cysteine (if you don't want to use this as a reference sequence, please remove it from the file)
+Warning: reference sequence IGLV7*02: Sequence truncated before second cysteine (if you don't want to use this as a reference sequence, please remove it from the file)
+Warning: reference sequence IGLV8*01: Sequence truncated before second cysteine (if you don't want to use this as a reference sequence, please remove it from the file)
+Warning: reference sequence IGLV8*02: Sequence truncated before second cysteine (if you don't want to use this as a reference sequence, please remove it from the file)
+
+(digby39) d:\Research\gldb-mouse\A_J>cd .. 
+
+(digby39) d:\Research\gldb-mouse>cd AKR_J 
+
+(digby39) d:\Research\gldb-mouse\AKR_J>rm db/mouse_AKR_J_IGL.csv 
+
+(digby39) d:\Research\gldb-mouse\AKR_J>python ../../iglabel/iglabel.py create db/mouse_AKR_J_IGL.csv 
+Creating database "db/mouse_AKR_J_IGL.csv"
+Database created.
+
+(digby39) d:\Research\gldb-mouse\AKR_J>python ../../iglabel/iglabel.py query db/mouse_AKR_J_IGL.csv kos_et_al_2022_light_chain/IGL_V.fasta results.csv actions.csv 
+Querying database "db/mouse_AKR_J_IGL.csv" for sequences in "kos_et_al_2022_light_chain/IGL_V.fasta"
+
+(digby39) d:\Research\gldb-mouse\AKR_J>python ../../iglabel/iglabel.py add db/mouse_AKR_J_IGL.csv actions.csv "Kos et al., 2022" 
+Database written to db/mouse_AKR_J_IGL.csv. Previous version saved as db/mouse_AKR_J_IGL_old.csv
+
+(digby39) d:\Research\gldb-mouse\AKR_J>gap_inferred kos_et_al_2022_light_chain/IGL_V.fasta ../imgt/Mus_musculus_IGLV_gapped.fasta kos_et_al_2022_light_chain/IGL_V_gapped.fasta 
+Warning: reference sequence IGLV4*01: Sequence truncated before second cysteine (if you don't want to use this as a reference sequence, please remove it from the file)
+Warning: reference sequence IGLV5*01: Sequence truncated before second cysteine (if you don't want to use this as a reference sequence, please remove it from the file)
+Warning: reference sequence IGLV6*01: Sequence truncated before second cysteine (if you don't want to use this as a reference sequence, please remove it from the file)
+Warning: reference sequence IGLV6*02: Sequence truncated before second cysteine (if you don't want to use this as a reference sequence, please remove it from the file)
+Warning: reference sequence IGLV6*03: Sequence truncated before second cysteine (if you don't want to use this as a reference sequence, please remove it from the file)
+Warning: reference sequence IGLV7*01: Sequence truncated before second cysteine (if you don't want to use this as a reference sequence, please remove it from the file)
+Warning: reference sequence IGLV7*02: Sequence truncated before second cysteine (if you don't want to use this as a reference sequence, please remove it from the file)
+Warning: reference sequence IGLV8*01: Sequence truncated before second cysteine (if you don't want to use this as a reference sequence, please remove it from the file)
+Warning: reference sequence IGLV8*02: Sequence truncated before second cysteine (if you don't want to use this as a reference sequence, please remove it from the file)
+
+(digby39) d:\Research\gldb-mouse\AKR_J>cd .. 
+
+(digby39) d:\Research\gldb-mouse>cd B6 
+
+(digby39) d:\Research\gldb-mouse\B6>rm db/mouse_B6_IGL.csv 
+
+(digby39) d:\Research\gldb-mouse\B6>python ../../iglabel/iglabel.py create db/mouse_B6_IGL.csv 
+Creating database "db/mouse_B6_IGL.csv"
+Database created.
+
+(digby39) d:\Research\gldb-mouse\B6>python ../../iglabel/iglabel.py query db/mouse_B6_IGL.csv kos_et_al_2022_light_chain/IGL_V.fasta results.csv actions.csv 
+Querying database "db/mouse_B6_IGL.csv" for sequences in "kos_et_al_2022_light_chain/IGL_V.fasta"
+
+(digby39) d:\Research\gldb-mouse\B6>python ../../iglabel/iglabel.py add db/mouse_B6_IGL.csv actions.csv "Kos et al., 2022" 
+Database written to db/mouse_B6_IGL.csv. Previous version saved as db/mouse_B6_IGL_old.csv
+
+(digby39) d:\Research\gldb-mouse\B6>gap_inferred kos_et_al_2022_light_chain/IGL_V.fasta ../imgt/Mus_musculus_IGLV_gapped.fasta kos_et_al_2022_light_chain/IGL_V_gapped.fasta 
+Warning: reference sequence IGLV4*01: Sequence truncated before second cysteine (if you don't want to use this as a reference sequence, please remove it from the file)
+Warning: reference sequence IGLV5*01: Sequence truncated before second cysteine (if you don't want to use this as a reference sequence, please remove it from the file)
+Warning: reference sequence IGLV6*01: Sequence truncated before second cysteine (if you don't want to use this as a reference sequence, please remove it from the file)
+Warning: reference sequence IGLV6*02: Sequence truncated before second cysteine (if you don't want to use this as a reference sequence, please remove it from the file)
+Warning: reference sequence IGLV6*03: Sequence truncated before second cysteine (if you don't want to use this as a reference sequence, please remove it from the file)
+Warning: reference sequence IGLV7*01: Sequence truncated before second cysteine (if you don't want to use this as a reference sequence, please remove it from the file)
+Warning: reference sequence IGLV7*02: Sequence truncated before second cysteine (if you don't want to use this as a reference sequence, please remove it from the file)
+Warning: reference sequence IGLV8*01: Sequence truncated before second cysteine (if you don't want to use this as a reference sequence, please remove it from the file)
+Warning: reference sequence IGLV8*02: Sequence truncated before second cysteine (if you don't want to use this as a reference sequence, please remove it from the file)
+
+(digby39) d:\Research\gldb-mouse\B6>cd .. 
+
+(digby39) d:\Research\gldb-mouse>cd BALBC 
+
+(digby39) d:\Research\gldb-mouse\BALBC>rm db/mouse_BALBC_IGL.csv 
+
+(digby39) d:\Research\gldb-mouse\BALBC>python ../../iglabel/iglabel.py create db/mouse_BALBC_IGL.csv 
+Creating database "db/mouse_BALBC_IGL.csv"
+Database created.
+
+(digby39) d:\Research\gldb-mouse\BALBC>python ../../iglabel/iglabel.py query db/mouse_BALBC_IGL.csv kos_et_al_2022_light_chain/IGL_V.fasta results.csv actions.csv 
+Querying database "db/mouse_BALBC_IGL.csv" for sequences in "kos_et_al_2022_light_chain/IGL_V.fasta"
+
+(digby39) d:\Research\gldb-mouse\BALBC>python ../../iglabel/iglabel.py add db/mouse_BALBC_IGL.csv actions.csv "Kos et al., 2022" 
+Database written to db/mouse_BALBC_IGL.csv. Previous version saved as db/mouse_BALBC_IGL_old.csv
+
+(digby39) d:\Research\gldb-mouse\BALBC>gap_inferred kos_et_al_2022_light_chain/IGL_V.fasta ../imgt/Mus_musculus_IGLV_gapped.fasta kos_et_al_2022_light_chain/IGL_V_gapped.fasta 
+Warning: reference sequence IGLV4*01: Sequence truncated before second cysteine (if you don't want to use this as a reference sequence, please remove it from the file)
+Warning: reference sequence IGLV5*01: Sequence truncated before second cysteine (if you don't want to use this as a reference sequence, please remove it from the file)
+Warning: reference sequence IGLV6*01: Sequence truncated before second cysteine (if you don't want to use this as a reference sequence, please remove it from the file)
+Warning: reference sequence IGLV6*02: Sequence truncated before second cysteine (if you don't want to use this as a reference sequence, please remove it from the file)
+Warning: reference sequence IGLV6*03: Sequence truncated before second cysteine (if you don't want to use this as a reference sequence, please remove it from the file)
+Warning: reference sequence IGLV7*01: Sequence truncated before second cysteine (if you don't want to use this as a reference sequence, please remove it from the file)
+Warning: reference sequence IGLV7*02: Sequence truncated before second cysteine (if you don't want to use this as a reference sequence, please remove it from the file)
+Warning: reference sequence IGLV8*01: Sequence truncated before second cysteine (if you don't want to use this as a reference sequence, please remove it from the file)
+Warning: reference sequence IGLV8*02: Sequence truncated before second cysteine (if you don't want to use this as a reference sequence, please remove it from the file)
+
+(digby39) d:\Research\gldb-mouse\BALBC>cd .. 
+
+(digby39) d:\Research\gldb-mouse>cd C3H_HeJ 
+
+(digby39) d:\Research\gldb-mouse\C3H_HeJ>rm db/mouse_C3H_HeJ_IGL.csv 
+
+(digby39) d:\Research\gldb-mouse\C3H_HeJ>python ../../iglabel/iglabel.py create db/mouse_C3H_HeJ_IGL.csv 
+Creating database "db/mouse_C3H_HeJ_IGL.csv"
+Database created.
+
+(digby39) d:\Research\gldb-mouse\C3H_HeJ>python ../../iglabel/iglabel.py query db/mouse_C3H_HeJ_IGL.csv kos_et_al_2022_light_chain/IGL_V.fasta results.csv actions.csv 
+Querying database "db/mouse_C3H_HeJ_IGL.csv" for sequences in "kos_et_al_2022_light_chain/IGL_V.fasta"
+
+(digby39) d:\Research\gldb-mouse\C3H_HeJ>python ../../iglabel/iglabel.py add db/mouse_C3H_HeJ_IGL.csv actions.csv "Kos et al., 2022" 
+Database written to db/mouse_C3H_HeJ_IGL.csv. Previous version saved as db/mouse_C3H_HeJ_IGL_old.csv
+
+(digby39) d:\Research\gldb-mouse\C3H_HeJ>gap_inferred kos_et_al_2022_light_chain/IGL_V.fasta ../imgt/Mus_musculus_IGLV_gapped.fasta kos_et_al_2022_light_chain/IGL_V_gapped.fasta 
+Warning: reference sequence IGLV4*01: Sequence truncated before second cysteine (if you don't want to use this as a reference sequence, please remove it from the file)
+Warning: reference sequence IGLV5*01: Sequence truncated before second cysteine (if you don't want to use this as a reference sequence, please remove it from the file)
+Warning: reference sequence IGLV6*01: Sequence truncated before second cysteine (if you don't want to use this as a reference sequence, please remove it from the file)
+Warning: reference sequence IGLV6*02: Sequence truncated before second cysteine (if you don't want to use this as a reference sequence, please remove it from the file)
+Warning: reference sequence IGLV6*03: Sequence truncated before second cysteine (if you don't want to use this as a reference sequence, please remove it from the file)
+Warning: reference sequence IGLV7*01: Sequence truncated before second cysteine (if you don't want to use this as a reference sequence, please remove it from the file)
+Warning: reference sequence IGLV7*02: Sequence truncated before second cysteine (if you don't want to use this as a reference sequence, please remove it from the file)
+Warning: reference sequence IGLV8*01: Sequence truncated before second cysteine (if you don't want to use this as a reference sequence, please remove it from the file)
+Warning: reference sequence IGLV8*02: Sequence truncated before second cysteine (if you don't want to use this as a reference sequence, please remove it from the file)
+
+(digby39) d:\Research\gldb-mouse\C3H_HeJ>cd .. 
+
+(digby39) d:\Research\gldb-mouse>cd DBA_1J 
+
+(digby39) d:\Research\gldb-mouse\DBA_1J>rm db/mouse_DBA_1J_IGL.csv 
+
+(digby39) d:\Research\gldb-mouse\DBA_1J>python ../../iglabel/iglabel.py create db/mouse_DBA_1J_IGL.csv 
+Creating database "db/mouse_DBA_1J_IGL.csv"
+Database created.
+
+(digby39) d:\Research\gldb-mouse\DBA_1J>python ../../iglabel/iglabel.py query db/mouse_DBA_1J_IGL.csv kos_et_al_2022_light_chain/IGL_V.fasta results.csv actions.csv 
+Querying database "db/mouse_DBA_1J_IGL.csv" for sequences in "kos_et_al_2022_light_chain/IGL_V.fasta"
+
+(digby39) d:\Research\gldb-mouse\DBA_1J>python ../../iglabel/iglabel.py add db/mouse_DBA_1J_IGL.csv actions.csv "Kos et al., 2022" 
+Database written to db/mouse_DBA_1J_IGL.csv. Previous version saved as db/mouse_DBA_1J_IGL_old.csv
+
+(digby39) d:\Research\gldb-mouse\DBA_1J>gap_inferred kos_et_al_2022_light_chain/IGL_V.fasta ../imgt/Mus_musculus_IGLV_gapped.fasta kos_et_al_2022_light_chain/IGL_V_gapped.fasta 
+Warning: reference sequence IGLV4*01: Sequence truncated before second cysteine (if you don't want to use this as a reference sequence, please remove it from the file)
+Warning: reference sequence IGLV5*01: Sequence truncated before second cysteine (if you don't want to use this as a reference sequence, please remove it from the file)
+Warning: reference sequence IGLV6*01: Sequence truncated before second cysteine (if you don't want to use this as a reference sequence, please remove it from the file)
+Warning: reference sequence IGLV6*02: Sequence truncated before second cysteine (if you don't want to use this as a reference sequence, please remove it from the file)
+Warning: reference sequence IGLV6*03: Sequence truncated before second cysteine (if you don't want to use this as a reference sequence, please remove it from the file)
+Warning: reference sequence IGLV7*01: Sequence truncated before second cysteine (if you don't want to use this as a reference sequence, please remove it from the file)
+Warning: reference sequence IGLV7*02: Sequence truncated before second cysteine (if you don't want to use this as a reference sequence, please remove it from the file)
+Warning: reference sequence IGLV8*01: Sequence truncated before second cysteine (if you don't want to use this as a reference sequence, please remove it from the file)
+Warning: reference sequence IGLV8*02: Sequence truncated before second cysteine (if you don't want to use this as a reference sequence, please remove it from the file)
+
+(digby39) d:\Research\gldb-mouse\DBA_1J>cd .. 
+
+(digby39) d:\Research\gldb-mouse>cd DBA_2J 
+
+(digby39) d:\Research\gldb-mouse\DBA_2J>rm db/mouse_DBA_2J_IGL.csv 
+
+(digby39) d:\Research\gldb-mouse\DBA_2J>python ../../iglabel/iglabel.py create db/mouse_DBA_2J_IGL.csv 
+Creating database "db/mouse_DBA_2J_IGL.csv"
+Database created.
+
+(digby39) d:\Research\gldb-mouse\DBA_2J>python ../../iglabel/iglabel.py query db/mouse_DBA_2J_IGL.csv kos_et_al_2022_light_chain/IGL_V.fasta results.csv actions.csv 
+Querying database "db/mouse_DBA_2J_IGL.csv" for sequences in "kos_et_al_2022_light_chain/IGL_V.fasta"
+
+(digby39) d:\Research\gldb-mouse\DBA_2J>python ../../iglabel/iglabel.py add db/mouse_DBA_2J_IGL.csv actions.csv "Kos et al., 2022" 
+Database written to db/mouse_DBA_2J_IGL.csv. Previous version saved as db/mouse_DBA_2J_IGL_old.csv
+
+(digby39) d:\Research\gldb-mouse\DBA_2J>gap_inferred kos_et_al_2022_light_chain/IGL_V.fasta ../imgt/Mus_musculus_IGLV_gapped.fasta kos_et_al_2022_light_chain/IGL_V_gapped.fasta 
+Warning: reference sequence IGLV4*01: Sequence truncated before second cysteine (if you don't want to use this as a reference sequence, please remove it from the file)
+Warning: reference sequence IGLV5*01: Sequence truncated before second cysteine (if you don't want to use this as a reference sequence, please remove it from the file)
+Warning: reference sequence IGLV6*01: Sequence truncated before second cysteine (if you don't want to use this as a reference sequence, please remove it from the file)
+Warning: reference sequence IGLV6*02: Sequence truncated before second cysteine (if you don't want to use this as a reference sequence, please remove it from the file)
+Warning: reference sequence IGLV6*03: Sequence truncated before second cysteine (if you don't want to use this as a reference sequence, please remove it from the file)
+Warning: reference sequence IGLV7*01: Sequence truncated before second cysteine (if you don't want to use this as a reference sequence, please remove it from the file)
+Warning: reference sequence IGLV7*02: Sequence truncated before second cysteine (if you don't want to use this as a reference sequence, please remove it from the file)
+Warning: reference sequence IGLV8*01: Sequence truncated before second cysteine (if you don't want to use this as a reference sequence, please remove it from the file)
+Warning: reference sequence IGLV8*02: Sequence truncated before second cysteine (if you don't want to use this as a reference sequence, please remove it from the file)
+
+(digby39) d:\Research\gldb-mouse\DBA_2J>cd .. 
+
+(digby39) d:\Research\gldb-mouse>cd NOD_ShiLtJ 
+
+(digby39) d:\Research\gldb-mouse\NOD_ShiLtJ>rm db/mouse_NOD_ShiLtJ_IGL.csv 
+
+(digby39) d:\Research\gldb-mouse\NOD_ShiLtJ>python ../../iglabel/iglabel.py create db/mouse_NOD_ShiLtJ_IGL.csv 
+Creating database "db/mouse_NOD_ShiLtJ_IGL.csv"
+Database created.
+
+(digby39) d:\Research\gldb-mouse\NOD_ShiLtJ>python ../../iglabel/iglabel.py query db/mouse_NOD_ShiLtJ_IGL.csv kos_et_al_2022_light_chain/IGL_V.fasta results.csv actions.csv 
+Querying database "db/mouse_NOD_ShiLtJ_IGL.csv" for sequences in "kos_et_al_2022_light_chain/IGL_V.fasta"
+
+(digby39) d:\Research\gldb-mouse\NOD_ShiLtJ>python ../../iglabel/iglabel.py add db/mouse_NOD_ShiLtJ_IGL.csv actions.csv "Kos et al., 2022" 
+Database written to db/mouse_NOD_ShiLtJ_IGL.csv. Previous version saved as db/mouse_NOD_ShiLtJ_IGL_old.csv
+
+(digby39) d:\Research\gldb-mouse\NOD_ShiLtJ>gap_inferred kos_et_al_2022_light_chain/IGL_V.fasta ../imgt/Mus_musculus_IGLV_gapped.fasta kos_et_al_2022_light_chain/IGL_V_gapped.fasta 
+Warning: reference sequence IGLV4*01: Sequence truncated before second cysteine (if you don't want to use this as a reference sequence, please remove it from the file)
+Warning: reference sequence IGLV5*01: Sequence truncated before second cysteine (if you don't want to use this as a reference sequence, please remove it from the file)
+Warning: reference sequence IGLV6*01: Sequence truncated before second cysteine (if you don't want to use this as a reference sequence, please remove it from the file)
+Warning: reference sequence IGLV6*02: Sequence truncated before second cysteine (if you don't want to use this as a reference sequence, please remove it from the file)
+Warning: reference sequence IGLV6*03: Sequence truncated before second cysteine (if you don't want to use this as a reference sequence, please remove it from the file)
+Warning: reference sequence IGLV7*01: Sequence truncated before second cysteine (if you don't want to use this as a reference sequence, please remove it from the file)
+Warning: reference sequence IGLV7*02: Sequence truncated before second cysteine (if you don't want to use this as a reference sequence, please remove it from the file)
+Warning: reference sequence IGLV8*01: Sequence truncated before second cysteine (if you don't want to use this as a reference sequence, please remove it from the file)
+Warning: reference sequence IGLV8*02: Sequence truncated before second cysteine (if you don't want to use this as a reference sequence, please remove it from the file)
+
+(digby39) d:\Research\gldb-mouse\NOD_ShiLtJ>cd .. 
+
+(digby39) d:\Research\gldb-mouse>cd NOR_LtJ 
+
+(digby39) d:\Research\gldb-mouse\NOR_LtJ>rm db/mouse_NOR_LtJ_IGL.csv 
+
+(digby39) d:\Research\gldb-mouse\NOR_LtJ>python ../../iglabel/iglabel.py create db/mouse_NOR_LtJ_IGL.csv 
+Creating database "db/mouse_NOR_LtJ_IGL.csv"
+Database created.
+
+(digby39) d:\Research\gldb-mouse\NOR_LtJ>python ../../iglabel/iglabel.py query db/mouse_NOR_LtJ_IGL.csv kos_et_al_2022_light_chain/IGL_V.fasta results.csv actions.csv 
+Querying database "db/mouse_NOR_LtJ_IGL.csv" for sequences in "kos_et_al_2022_light_chain/IGL_V.fasta"
+
+(digby39) d:\Research\gldb-mouse\NOR_LtJ>python ../../iglabel/iglabel.py add db/mouse_NOR_LtJ_IGL.csv actions.csv "Kos et al., 2022" 
+Database written to db/mouse_NOR_LtJ_IGL.csv. Previous version saved as db/mouse_NOR_LtJ_IGL_old.csv
+
+(digby39) d:\Research\gldb-mouse\NOR_LtJ>gap_inferred kos_et_al_2022_light_chain/IGL_V.fasta ../imgt/Mus_musculus_IGLV_gapped.fasta kos_et_al_2022_light_chain/IGL_V_gapped.fasta 
+Warning: reference sequence IGLV4*01: Sequence truncated before second cysteine (if you don't want to use this as a reference sequence, please remove it from the file)
+Warning: reference sequence IGLV5*01: Sequence truncated before second cysteine (if you don't want to use this as a reference sequence, please remove it from the file)
+Warning: reference sequence IGLV6*01: Sequence truncated before second cysteine (if you don't want to use this as a reference sequence, please remove it from the file)
+Warning: reference sequence IGLV6*02: Sequence truncated before second cysteine (if you don't want to use this as a reference sequence, please remove it from the file)
+Warning: reference sequence IGLV6*03: Sequence truncated before second cysteine (if you don't want to use this as a reference sequence, please remove it from the file)
+Warning: reference sequence IGLV7*01: Sequence truncated before second cysteine (if you don't want to use this as a reference sequence, please remove it from the file)
+Warning: reference sequence IGLV7*02: Sequence truncated before second cysteine (if you don't want to use this as a reference sequence, please remove it from the file)
+Warning: reference sequence IGLV8*01: Sequence truncated before second cysteine (if you don't want to use this as a reference sequence, please remove it from the file)
+Warning: reference sequence IGLV8*02: Sequence truncated before second cysteine (if you don't want to use this as a reference sequence, please remove it from the file)
+
+(digby39) d:\Research\gldb-mouse\NOR_LtJ>cd .. 
+
+(digby39) d:\Research\gldb-mouse>cd NZB_BlNJ 
+
+(digby39) d:\Research\gldb-mouse\NZB_BlNJ>rm db/mouse_NZB_BlNJ_IGL.csv 
+
+(digby39) d:\Research\gldb-mouse\NZB_BlNJ>python ../../iglabel/iglabel.py create db/mouse_NZB_BlNJ_IGL.csv 
+Creating database "db/mouse_NZB_BlNJ_IGL.csv"
+Database created.
+
+(digby39) d:\Research\gldb-mouse\NZB_BlNJ>python ../../iglabel/iglabel.py query db/mouse_NZB_BlNJ_IGL.csv kos_et_al_2022_light_chain/IGL_V.fasta results.csv actions.csv 
+Querying database "db/mouse_NZB_BlNJ_IGL.csv" for sequences in "kos_et_al_2022_light_chain/IGL_V.fasta"
+
+(digby39) d:\Research\gldb-mouse\NZB_BlNJ>python ../../iglabel/iglabel.py add db/mouse_NZB_BlNJ_IGL.csv actions.csv "Kos et al., 2022" 
+Database written to db/mouse_NZB_BlNJ_IGL.csv. Previous version saved as db/mouse_NZB_BlNJ_IGL_old.csv
+
+(digby39) d:\Research\gldb-mouse\NZB_BlNJ>gap_inferred kos_et_al_2022_light_chain/IGL_V.fasta ../imgt/Mus_musculus_IGLV_gapped.fasta kos_et_al_2022_light_chain/IGL_V_gapped.fasta 
+Warning: reference sequence IGLV4*01: Sequence truncated before second cysteine (if you don't want to use this as a reference sequence, please remove it from the file)
+Warning: reference sequence IGLV5*01: Sequence truncated before second cysteine (if you don't want to use this as a reference sequence, please remove it from the file)
+Warning: reference sequence IGLV6*01: Sequence truncated before second cysteine (if you don't want to use this as a reference sequence, please remove it from the file)
+Warning: reference sequence IGLV6*02: Sequence truncated before second cysteine (if you don't want to use this as a reference sequence, please remove it from the file)
+Warning: reference sequence IGLV6*03: Sequence truncated before second cysteine (if you don't want to use this as a reference sequence, please remove it from the file)
+Warning: reference sequence IGLV7*01: Sequence truncated before second cysteine (if you don't want to use this as a reference sequence, please remove it from the file)
+Warning: reference sequence IGLV7*02: Sequence truncated before second cysteine (if you don't want to use this as a reference sequence, please remove it from the file)
+Warning: reference sequence IGLV8*01: Sequence truncated before second cysteine (if you don't want to use this as a reference sequence, please remove it from the file)
+Warning: reference sequence IGLV8*02: Sequence truncated before second cysteine (if you don't want to use this as a reference sequence, please remove it from the file)
+
+(digby39) d:\Research\gldb-mouse\NZB_BlNJ>cd .. 

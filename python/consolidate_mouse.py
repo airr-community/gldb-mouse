@@ -5,12 +5,12 @@ import simple_bio_seq as simple
 import csv
 import number_ighv
 
-parser = argparse.ArgumentParser(description='Find valid genes in a contig given blast matches')
-parser.add_argument('database', help='output file (csv)')
+parser = argparse.ArgumentParser(description='Create a summary file that brings together info from the iglabel database with the sources of its sequences and IMGT names')
+parser.add_argument('database', help='sequence database (csv)')
 parser.add_argument('imgt_ref', help='imgt reference file (ungapped)')
 parser.add_argument('imgt_v_gapped', help='imgt reference file (gapped V genes)')
 parser.add_argument('subgroup', help='species subgroup')
-parser.add_argument('-source', help='subdirectory/filename of source to add)', action='append')
+parser.add_argument('-source', help='subdirectory/filename of source to add (multiple sources can be specified)', action='append')
 parser.add_argument('output_file', help='output file (csv)')
 args = parser.parse_args()
 
@@ -22,6 +22,8 @@ for source in args.source:
     sources[source_name] = {}
     if 'watson' in source_name:
         for name, seq in genes.items():
+            if 'IG' not in name:
+                breakpoint()
             type = 'IG' + name.split('IG')[1][:2]
             if seq not in sources[source_name]:
                 sources[source_name][seq] = []
@@ -34,6 +36,7 @@ sources['imgt'] = {}
 for name, seq in imgt_ref.items():
     if seq not in sources['imgt']:
         sources['imgt'][seq] = []
+    type = 'IG' + name.split('IG')[1][:2]
     sources['imgt'][seq].append({'type': type, 'gene_name': name})
 
 with open(args.database, 'r') as fi, open(args.output_file, 'w', newline='') as fo:
@@ -44,8 +47,11 @@ with open(args.database, 'r') as fi, open(args.output_file, 'w', newline='') as 
     writer = csv.DictWriter(fo, fieldnames=headers)
     writer.writeheader()
 
+    untracked_sequences = 0
+
     for row in reader:
         for seq in row['sequences'].split(','):
+            source_found = False
             rec = {'gene_label': row['label'], 'type': None, 'functional': 'Y', 'inference_type': 'Rearranged', 
                     'species_subgroup': args.subgroup, 'subgroup_type': 'strain', 'alt_names': '', 'notes': '', 'affirmation': '1', 'sequence': seq, 'sequence_gapped': ''}
             alt_names = []
@@ -63,11 +69,17 @@ with open(args.database, 'r') as fi, open(args.output_file, 'w', newline='') as 
                         rec['type'] = sources[source][seq][0]['type']
                         rec['gene_label'] = rec['type'] + '-' + row['label']
                         alt_names.extend([source + ':' + rec['gene_name'] for rec in sources[source][seq]])
-            if 'IGHV' in rec['type']:
-                res, aa, notes = number_ighv.gap_sequence(rec['sequence'], imgt_v_gapped, imgt_ref)
-                rec['sequence_gapped'] = res
-                rec['notes'] += notes
-            rec['alt_names'] = ','.join(alt_names)
-            
+                        source_found = True
 
-            writer.writerow(rec)
+            if source_found:
+                if 'IGHV' in rec['type']:
+                    res, aa, notes = number_ighv.gap_sequence(rec['sequence'], imgt_v_gapped, imgt_ref)
+                    rec['sequence_gapped'] = res
+                    rec['notes'] += notes
+                rec['alt_names'] = ','.join(alt_names)
+                writer.writerow(rec)
+            else:
+                untracked_sequences += 1
+
+    if untracked_sequences:
+        print(f'{untracked_sequences} records found in the database were not listed in the source and have not been added to the summary.')

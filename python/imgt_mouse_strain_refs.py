@@ -9,7 +9,7 @@ import simple_bio_seq as simple
 
 imgt_file = 'imgt/IMGTGENEDB-ReferenceSequences.fasta-nt-WithGaps-F+ORF+inframeP'
 strains = ['musculus']
-gene_types = ['IGHV', 'IGHD', 'IGHJ']
+gene_types = ['IGLV', 'IGLD', 'IGLJ']
 
 
 strain_seqs = {}
@@ -41,6 +41,6 @@ for rec in recs:
                         strain_seqs[strain]['ungapped'][name + '|' + imgt_species] = str(rec.seq).upper().replace('.', '')
             
 for strain in strains:
-    simple.write_fasta(strain_seqs[strain]['gapped'], 'imgt/%s_imgt_V_gapped.fasta' % strain)
-    simple.write_fasta(strain_seqs[strain]['ungapped'], 'imgt/%s_imgt_ungapped.fasta' % strain)
+    simple.write_fasta(strain_seqs[strain]['gapped'], 'imgt/%s_imgt_VL_gapped.fasta' % strain)
+    simple.write_fasta(strain_seqs[strain]['ungapped'], 'imgt/%s_imgt_L_ungapped.fasta' % strain)
 

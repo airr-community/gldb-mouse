@@ -1,0 +1,11 @@
+Each strain has subfolders for each source of sequences for that strain, and a db folder holding the iglabel databases, one database per locus
+'consolidation' takes details from each source, labels from the iglabel database and builds a file for upload to OGRDB
+Once the reference set for a strain is built and uploaded to OGRDB, OGRDB becomes the master. If new strains need to be added, they will
+need to be added to the IgLabel database - but then they can be added manually to OGRDB, likewise changes to existing sequences can be made
+at OGRDB
+
+Hence consolidation is a one-off process that should not need to be repeated.
+
+Light chain sequences were consolidated into ./kos_et_al_2022_light_chain - see ./kos_light_chain_commands.bat and ./commands.txt
+B6 and BALBC heavy chain are in ./B6/summary.csv, ./BALBC/summary.csv
+Other heavy chain V sequences (Watson et al) are in each folder, as strain_sumamry.csv - see ./consolidated_reports.sh
