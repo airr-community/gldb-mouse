@@ -1,0 +1,50 @@
+        j_codon_frame:
+            description: Codon position of the first nucleotide in the 'coding_sequence' field. Mandatory for J genes. Not used for V or D genes. ('1' means the sequence is in-frame, '2' means that the first bp is missing from the first codon, '3' means that the first 2 bp are missing)
+        j_cdr3_end:
+            description: In the case of a J-gene, the co-ordinate (in the sequence field) of the first nucelotide of the conserved PHE or TRP (IMGT codon position 118)
+
+
+
+
+IGHJ-K6AI
+CTACTGGTACTTCGATGTCTGGGGCACAGGGACCACGGTCACCGTCTCCTCAG
+
+5'3' Frame 2
+cdr3_end 20
+         1         2         3         4  
+12345678901234567890123456789012345678901234567890
+ctactggtacttcgatgtctggggcacagggaccacggtcaccgtctcctca
+  Y  W  Y  F  D  V  W  G  T  G  T  T  V  T  V  S  S 
+
+
+IGHJ-O6GC
+ACTACTTTGACTACTGGGGCCAAGGCACCACTATCACAGTCTCCTCAG
+
+
+5'3' Frame 3
+cdr3_end 15
+         1         2         3         4  
+12345678901234567890123456789012345678901234567890
+actactttgactactggggccaaggcaccactatcacagtctcctca
+   Y  F  D  Y  W  G  Q  G  T  T  I  T  V  S  S 
+
+IGHJ-UP34
+CCTGGTTTGCTTACTGGGGCCAAGGGACTCTGGTCACTGTCTCTGCAG
+
+5'3' Frame 3
+cdr3_end 15
+         1         2         3         4  
+12345678901234567890123456789012345678901234567890
+cctggtttgcttactggggccaagggactctggtcactgtctctgca
+   W  F  A  Y  W  G  Q  G  T  L  V  T  V  S  A 
+
+IGHJ-EGQA
+ATTACTATGCTATGGACTACTGGGGTCAAGGAACCTCAGTCACCGTCTCCTCAG
+
+
+5'3' Frame 3
+cdr3_end 21
+         1         2         3         4  
+12345678901234567890123456789012345678901234567890
+attactatgctatggactactggggtcaaggaacctcagtcaccgtctcctca
+   Y  Y  A  M  D  Y  W  G  Q  G  T  S  V  T  V  S  S 
