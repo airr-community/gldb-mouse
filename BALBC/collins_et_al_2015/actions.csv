@@ -1,0 +1,13 @@
+seq_id,sequence,action,label,reason
+IGHD1-1*01|Mus_musculus_BALB/c,TTTATTACTACGGTAGTAGCTAC,none,OWOX,exact
+IGHD1-2*01|Mus_musculus_BALB/c,TTCATTACTACGGCTAC,none,QORP,exact
+IGHD2-1*01|Mus_musculus_129/Sv,TCTACTATGGTAACTAC,none,EVA3,exact
+IGHD2-2*01|Mus_musculus_BALB/c,TCTACTATGGTTACGAC,none,N42X,exact
+IGHD2-3*01|Mus_musculus_BALB/c,TCTATGATGGTTACTAC,none,VVIM,exact
+IGHD2-4*01|Mus_musculus_BALB/c,TCTACTATGATTACGAC,none,AHWW,exact
+IGHD2-7*01|Mus_musculus_BALB/c,TCTACTATGGTTACGAC,none,N42X,exact
+IGHD2-8*01|Mus_musculus_BALB/c,TCTACTATGGTAACTAC,none,EVA3,exact
+IGHD2-10*01|Mus_musculus_BALB/c,CCTACTATGGTAACTAC,new_label,,no_match
+IGHD2-14*01|Mus_musculus_129/Sv,CCTACTATAGGTACGAC,none,PF6D,exact
+IGHD3-2*01|Mus_musculus_BALB/c,AGACAGCTCGGGCTAC,none,XUKM,exact
+IGHD4-1*01|Mus_musculus_BALB/c,CTAACTGGGAC,none,HNPT,exact

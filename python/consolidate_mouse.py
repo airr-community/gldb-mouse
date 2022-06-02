@@ -19,7 +19,8 @@ sources = {}
 for source in args.source:
     genes = simple.read_fasta(source)
     source_name = source.split('/')[0]
-    sources[source_name] = {}
+    if source_name not in sources:
+        sources[source_name] = {}
     if 'watson' in source_name:
         for name, seq in genes.items():
             if 'IG' not in name:
@@ -28,6 +29,15 @@ for source in args.source:
             if seq not in sources[source_name]:
                 sources[source_name][seq] = []
             sources[source_name][seq].append({'type': type, 'gene_name': name})
+    if 'collins' in source_name:
+        for name, seq in genes.items():
+            type = 'IG' + name.split('IG')[1][:2]
+            if '|' in name:
+                name = name.split('|')[0]
+            if seq not in sources[source_name]:
+                sources[source_name][seq] = []
+            sources[source_name][seq].append({'type': type, 'gene_name': name})
+
 
 imgt_ref = simple.read_fasta(args.imgt_ref)
 imgt_v_gapped = simple.read_fasta(args.imgt_v_gapped)
@@ -41,9 +51,9 @@ for name, seq in imgt_ref.items():
 
 with open(args.database, 'r') as fi, open(args.output_file, 'w', newline='') as fo:
     reader = csv.DictReader(fi)
-    headers = ['gene_label', 'type', 'functional', 'inference_type', 'species_subgroup', 'subgroup_type']
+    headers = ['gene_label', 'type', 'functionality', 'inference_type', 'species_subgroup', 'subgroup_type']
     headers.extend(sources.keys())
-    headers.extend(['alt_names', 'notes', 'affirmation', 'sequence', 'sequence_gapped'])
+    headers.extend(['alt_names', 'notes', 'affirmation', 'sequence', 'sequence_gapped', 'j_codon_frame', 'j_cdr3_end'])
     writer = csv.DictWriter(fo, fieldnames=headers)
     writer.writeheader()
 
@@ -52,8 +62,8 @@ with open(args.database, 'r') as fi, open(args.output_file, 'w', newline='') as 
     for row in reader:
         for seq in row['sequences'].split(','):
             source_found = False
-            rec = {'gene_label': row['label'], 'type': None, 'functional': 'Y', 'inference_type': 'Rearranged', 
-                    'species_subgroup': args.subgroup, 'subgroup_type': 'strain', 'alt_names': '', 'notes': '', 'affirmation': '1', 'sequence': seq, 'sequence_gapped': ''}
+            rec = {'gene_label': row['label'], 'type': None, 'functionality': 'F', 'inference_type': 'Rearranged',
+                    'species_subgroup': args.subgroup, 'subgroup_type': 'strain', 'alt_names': '', 'notes': '', 'affirmation': '1', 'sequence': seq, 'sequence_gapped': seq}
             alt_names = []
             for source in sources.keys():
                 rec[source] = ''
