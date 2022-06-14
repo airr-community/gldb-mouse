@@ -1,0 +1,24 @@
+IGHJ1*03|Mus_musculus_A/J: j_codon_frame 2 j_cdr3_end 20
+       1  2  3  4  5  6  7  8  9  10 11 12 13 14 15 16 17
+       Y  W  Y  F  D  V  W  G  T  G  T  T  V  T  V  S  S 
+    C TACTGGTACTTCGATGTCTGGGGCACAGGGACCACGGTCACCGTCTCCTCAG
+
+
+IGHJ2*01|Mus_musculus: j_codon_frame 3 j_cdr3_end 15
+       1  2  3  4  5  6  7  8  9  10 11 12 13 14 15
+       Y  F  D  Y  W  G  Q  G  T  T  L  T  V  S  S 
+   AC TACTTTGACTACTGGGGCCAAGGCACCACTCTCACAGTCTCCTCAG
+
+
+IGHJ3*01|Mus_musculus: j_codon_frame 3 j_cdr3_end 15
+       1  2  3  4  5  6  7  8  9  10 11 12 13 14 15
+       W  F  A  Y  W  G  Q  G  T  L  V  T  V  S  A 
+   CC TGGTTTGCTTACTGGGGCCAAGGGACTCTGGTCACTGTCTCTGCAG
+
+
+IGHJ4*01|Mus_musculus: j_codon_frame 3 j_cdr3_end 21
+       1  2  3  4  5  6  7  8  9  10 11 12 13 14 15 16 17
+       Y  Y  A  M  D  Y  W  G  Q  G  T  S  V  T  V  S  S 
+   AT TACTATGCTATGGACTACTGGGGTCAAGGAACCTCAGTCACCGTCTCCTCAG
+
+

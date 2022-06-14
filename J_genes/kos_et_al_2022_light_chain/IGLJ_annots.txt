@@ -1,0 +1,42 @@
+IGLJ1*01: j_codon_frame 2 j_cdr3_end 8
+       1  2  3  4  5  6  7  8  9  10 11 12
+       W  V  F  G  G  G  T  K  L  T  V  L 
+    C TGGGTGTTCGGTGGAGGAACCAAACTGACTGTCCTAG
+
+
+IGLJ2*01: j_codon_frame 2 j_cdr3_end 8
+       1  2  3  4  5  6  7  8  9  10 11 12
+       Y  V  F  G  G  G  T  K  V  T  V  L 
+    T TATGTTTTCGGCGGTGGAACCAAGGTCACTGTCCTAG
+
+
+IGLJ3*01: j_codon_frame 2 j_cdr3_end 8
+       1  2  3  4  5  6  7  8  9  10 11 12
+       F  I  F  G  S  G  T  K  V  T  V  L 
+    G TTTATTTTCGGCAGTGGAACCAAGGTCACTGTCCTAG
+
+
+IGLJ3P*01: no solutions
+manual j_codon_frame 2 j_cdr3_end 8
+aggttctttttcctcaaatggcctattgtatgcagga
+  G  S  F  S  S  N  G  L  L  Y  A  G 
+
+
+IGLJ4*01: j_codon_frame 2 j_cdr3_end 8
+       1  2  3  4  5  6  7  8  9  10 11 12 13
+       W  V  F  G  G  G  T  R  L  T  V  L  D 
+    T TGGGTGTTCGGAGGTGGAACCAGATTGACTGTCCTAGATGA
+
+
+IGLJ1*01_1: j_codon_frame 2 j_cdr3_end 8
+       1  2  3  4  5  6  7  8  9  10 11 12
+       W  V  F  G  G  G  T  K  L  T  V  L 
+    C TGGGTGTTCGGTGGAGGAACCAAATTGACTGTCCTAG
+
+
+IGLJ2*01_2: j_codon_frame 2 j_cdr3_end 8
+       1  2  3  4  5  6  7  8  9  10 11 12
+       Y  V  F  G  S  G  T  K  V  T  V  L 
+    T TATGTTTTCGGCAGTGGAACCAAGGTCACTGTCCTAG
+
+

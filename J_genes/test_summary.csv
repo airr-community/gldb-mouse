@@ -1,0 +1,2 @@
+gene_label,type,functionality,inference_type,species_subgroup,subgroup_type,imgt,alt_names,notes,affirmation,sequence,sequence_gapped,j_codon_frame,j_cdr3_end
+IGKJ-4JXG,IGKJ,F,Rearranged,Light_J,strain,IGKJ1*01,Kos et al: IGKJ1*01,,1,GTGGACGTTCGGTGGAGGCACCAAGCTGGAAATCAAAC,,2,8
